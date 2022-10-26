@@ -6,7 +6,7 @@
 },
 {
   "directory": "/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build",
-  "command": "/usr/bin/c++   -I/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include -isystem /usr/include/opencv4  -g   -o CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o -c /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp",
+  "command": "/usr/bin/c++  -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB -I/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include -isystem /opt/ros/foxy/include -isystem /usr/include/opencv4  -g   -o CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o -c /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp",
   "file": "/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp"
 }
 ]
