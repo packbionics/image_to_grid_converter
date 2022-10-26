@@ -26,12 +26,12 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //=================================================================================================
 
-#include "ros/ros.h"
+#include "rclcpp/rclcpp.h"
 
-#include <nav_msgs/GetMap.h>
-#include <geometry_msgs/Quaternion.h>
-#include <geometry_msgs/PoseStamped.h>
-#include <sensor_msgs/image_encodings.h>
+#include <nav_msgs/msg/GetMap.h>
+#include <geometry_msgs/msg/Quaternion.h>
+#include <geometry_msgs/msg/PoseStamped.h>
+#include <sensor_msgs/msg/image_encodings.h>
 
 
 #include <cv_bridge/cv_bridge.h>	
@@ -41,7 +41,7 @@
 
 #include <HectorMapTools.h>
 #include <math.h>
-#include <tf/transform_datatypes.h>
+#include <tf2/transform_datatypes.h>
 
 using namespace std;
 using namespace cv_bridge;

@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "2.8.3"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "map_to_jpeg",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "image_to_map_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-image_to_map_node-Debug-0cddee4d1d3fecd41ccf.json",
+					"name" : "image_to_map_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_to_image_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_to_image_node-Debug-56ad47bf10a134e99cf9.json",
+					"name" : "map_to_image_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "map_to_jpeg_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-map_to_jpeg_uninstall-Debug-3618f6bb2abead546cd4.json",
+					"name" : "map_to_jpeg_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-1d3110a3c38a772d7f80.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build",
+		"source" : "/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

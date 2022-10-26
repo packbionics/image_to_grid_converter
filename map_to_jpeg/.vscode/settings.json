@@ -1,0 +1,14 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/jcbynum2/dev-workspace/install/pybullet_ros/lib/python3.8/site-packages",
+        "/home/jcbynum2/dev-workspace/install/obstacles/lib/python3.8/site-packages",
+        "/home/jcbynum2/dev-workspace/install/jetleg_vision/lib/python3.8/site-packages",
+        "/home/jcbynum2/dev-workspace/install/jetleg_interfaces/lib/python3.8/site-packages",
+        "/home/jcbynum2/dev-workspace/install/jetleg_description/lib/python3.8/site-packages",
+        "/home/jcbynum2/dev-workspace/install/jetleg_control/lib/python3.8/site-packages",
+        "/home/jcbynum2/dev-workspace/install/jetleg_bringup/lib/python3.8/site-packages",
+        "/home/jcbynum2/dev-workspace/install/humanoid_nav_msgs/lib/python3.8/site-packages",
+        "/home/jcbynum2/dev-workspace/src/pybullet_ros/install/pybullet_ros/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages"
+    ]
+}

@@ -29,8 +29,8 @@
 #ifndef __HectorMapTools_h_
 #define __HectorMapTools_h_
 
-#include <nav_msgs/OccupancyGrid.h>
-#include <nav_msgs/MapMetaData.h>
+#include <nav_msgs/msg/occupancy_grid.h>
+#include <nav_msgs/msg/map_meta_data.h>
 
 #include<Eigen/Core>
 

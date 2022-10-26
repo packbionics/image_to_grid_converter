@@ -27,12 +27,12 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "ros/ros.h"
+#include "rclcpp/rclcpp.h"
 
-#include <nav_msgs/GetMap.h>
-#include <geometry_msgs/Quaternion.h>
-#include <geometry_msgs/PoseStamped.h>
-#include <sensor_msgs/image_encodings.h>
+#include <nav_msgs/msg/GetMap.h>
+#include <geometry_msgs/msg/Quaternion.h>
+#include <geometry_msgs/msg/PoseStamped.h>
+#include <sensor_msgs/msg/image_encodings.h>
 #include <image_transport/image_transport.h>
 #include <Eigen/Geometry>
 #include <HectorMapTools.h>
