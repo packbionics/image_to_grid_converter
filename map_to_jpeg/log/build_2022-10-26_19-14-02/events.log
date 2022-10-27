@@ -1,0 +1,821 @@
+[0.000000] (-) TimerEvent: {}
+[0.002190] (map_to_jpeg) JobQueued: {'identifier': 'map_to_jpeg', 'dependencies': OrderedDict()}
+[0.002273] (map_to_jpeg) JobStarted: {'identifier': 'map_to_jpeg'}
+[0.038417] (map_to_jpeg) JobProgress: {'identifier': 'map_to_jpeg', 'progress': 'cmake'}
+[0.038651] (map_to_jpeg) JobProgress: {'identifier': 'map_to_jpeg', 'progress': 'build'}
+[0.041350] (map_to_jpeg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg', '--', '-j4', '-l4'], 'cwd': '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'jcbynum2'), ('SSH_AGENT_PID', '1486'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib'), ('HOME', '/home/jcbynum2'), ('OLDPWD', '/home/jcbynum2/dev-workspace'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1312'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'jcbynum2'), ('JOURNAL_STREAM', '8:33776'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'jcbynum2'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/foxy/bin:/home/jcbynum2/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/jcbynum2-VirtualBox:@/tmp/.ICE-unix/1549,unix/jcbynum2-VirtualBox:/tmp/.ICE-unix/1549'), ('INVOCATION_ID', 'abcfa063aa534328861fa610ae970f92'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/cdc97614_347c_4eb5_9fbf_784c4de13ee3'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.102'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/foxy'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/foxy/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.099748] (-) TimerEvent: {}
+[0.201285] (-) TimerEvent: {}
+[0.271440] (map_to_jpeg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target image_to_map_node\x1b[0m\n'}
+[0.285665] (map_to_jpeg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target map_to_image_node\x1b[0m\n'}
+[0.302477] (-) TimerEvent: {}
+[0.402948] (-) TimerEvent: {}
+[0.419185] (map_to_jpeg) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/image_to_map_node.dir/src/image_to_map_node.cpp.o\x1b[0m\n'}
+[0.503281] (-) TimerEvent: {}
+[0.604604] (-) TimerEvent: {}
+[0.668559] (map_to_jpeg) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o\x1b[0m\n'}
+[0.704772] (-) TimerEvent: {}
+[0.805281] (-) TimerEvent: {}
+[0.905724] (-) TimerEvent: {}
+[0.980421] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[0.980874] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires whitespace after the macro name\n'}
+[0.981085] (map_to_jpeg) StderrLine: {'line': b'   37 | #define \x1b[01;35m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid*\n'}
+[0.981251] (map_to_jpeg) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.005974] (-) TimerEvent: {}
+[1.108762] (-) TimerEvent: {}
+[1.155157] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42\x1b[m\x1b[K:\n'}
+[1.155484] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:9:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[KISO C++11 requires whitespace after the macro name\n'}
+[1.155742] (map_to_jpeg) StderrLine: {'line': b'   37 | #define \x1b[01;35m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid*\n'}
+[1.155951] (map_to_jpeg) StderrLine: {'line': b'      |         \x1b[01;35m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[1.209025] (-) TimerEvent: {}
+[1.309926] (-) TimerEvent: {}
+[1.410527] (-) TimerEvent: {}
+[1.512758] (-) TimerEvent: {}
+[1.615936] (-) TimerEvent: {}
+[1.716415] (-) TimerEvent: {}
+[1.817129] (-) TimerEvent: {}
+[1.917636] (-) TimerEvent: {}
+[2.018326] (-) TimerEvent: {}
+[2.119176] (-) TimerEvent: {}
+[2.219899] (-) TimerEvent: {}
+[2.320536] (-) TimerEvent: {}
+[2.421440] (-) TimerEvent: {}
+[2.522154] (-) TimerEvent: {}
+[2.622811] (-) TimerEvent: {}
+[2.723372] (-) TimerEvent: {}
+[2.823943] (-) TimerEvent: {}
+[2.924622] (-) TimerEvent: {}
+[3.025305] (-) TimerEvent: {}
+[3.125935] (-) TimerEvent: {}
+[3.226509] (-) TimerEvent: {}
+[3.327140] (-) TimerEvent: {}
+[3.427821] (-) TimerEvent: {}
+[3.528404] (-) TimerEvent: {}
+[3.629194] (-) TimerEvent: {}
+[3.729845] (-) TimerEvent: {}
+[3.830562] (-) TimerEvent: {}
+[3.931215] (-) TimerEvent: {}
+[4.031680] (-) TimerEvent: {}
+[4.132200] (-) TimerEvent: {}
+[4.232710] (-) TimerEvent: {}
+[4.333239] (-) TimerEvent: {}
+[4.365869] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:39\x1b[m\x1b[K:\n'}
+[4.366491] (map_to_jpeg) StderrLine: {'line': b"\x1b[01m\x1b[K/opt/ros/foxy/include/image_transport/image_transport.h:41:89:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K#pragma message: Warning: This header is deprecated. Use 'image_transport.hpp' instead\n"}
+[4.366757] (map_to_jpeg) StderrLine: {'line': b'   41 | #pragma message ("Warning: This header is deprecated. Use \'image_transport.hpp\' instead"\x1b[01;36m\x1b[K)\x1b[m\x1b[K\n'}
+[4.366935] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                         \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.433555] (-) TimerEvent: {}
+[4.534557] (-) TimerEvent: {}
+[4.635096] (-) TimerEvent: {}
+[4.722147] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.722565] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[4.722765] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.722935] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:51:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.723115] (map_to_jpeg) StderrLine: {'line': b'   51 |     CoordinateTransformer(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstPtr map)\n'}
+[4.723278] (map_to_jpeg) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.723500] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.723682] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid\x1b[01;31m\x1b[K*\x1b[m\x1b[K\n'}
+[4.723843] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.724004] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:51:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.724165] (map_to_jpeg) StderrLine: {'line': b'   51 |     CoordinateTransformer(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstPtr map)\n'}
+[4.724326] (map_to_jpeg) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.724713] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.725017] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid\x1b[01;31m\x1b[K*\x1b[m\x1b[K\n'}
+[4.725204] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.725391] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:51:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.725584] (map_to_jpeg) StderrLine: {'line': b'   51 |     CoordinateTransformer(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstPtr map)\n'}
+[4.725746] (map_to_jpeg) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.725914] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:51:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.726074] (map_to_jpeg) StderrLine: {'line': b'   51 |     CoordinateTransformer\x1b[01;36m\x1b[K(\x1b[m\x1b[Kconst nav_msgs::OccupancyGridConstPtr map)\n'}
+[4.726243] (map_to_jpeg) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.726446] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.726612] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::\x1b[01;31m\x1b[KOccupancyGrid\x1b[m\x1b[K*\n'}
+[4.726782] (map_to_jpeg) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.727004] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:51:33:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.727180] (map_to_jpeg) StderrLine: {'line': b'   51 |     CoordinateTransformer(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstPtr map)\n'}
+[4.727340] (map_to_jpeg) StderrLine: {'line': b'      |                                 \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.728759] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:51:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstPtr\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.729166] (map_to_jpeg) StderrLine: {'line': b'   51 |     CoordinateTransformer(const nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstPtr\x1b[m\x1b[K map)\n'}
+[4.729485] (map_to_jpeg) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.729797] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:51:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.730156] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:51:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.730479] (map_to_jpeg) StderrLine: {'line': b'   51 |     CoordinateTransformer(const nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstPtr\x1b[m\x1b[K map)\n'}
+[4.730813] (map_to_jpeg) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.731706] (map_to_jpeg) StderrLine: {'line': b'      |                                                                \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.735999] (-) TimerEvent: {}
+[4.736256] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:51:65:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.736806] (map_to_jpeg) StderrLine: {'line': b'   51 |     CoordinateTransformer(const nav_msgs::OccupancyGridConstPtr \x1b[01;31m\x1b[Kmap\x1b[m\x1b[K)\n'}
+[4.737149] (map_to_jpeg) StderrLine: {'line': b'      |                                                                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.737457] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.737858] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[4.738171] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.738474] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.738854] (map_to_jpeg) StderrLine: {'line': b'   57 |     void setTransforms(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGrid& map)\n'}
+[4.739193] (map_to_jpeg) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.739597] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.740367] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid\x1b[01;31m\x1b[K*\x1b[m\x1b[K\n'}
+[4.740787] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.741112] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.741441] (map_to_jpeg) StderrLine: {'line': b'   57 |     void setTransforms(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGrid& map)\n'}
+[4.741889] (map_to_jpeg) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.742305] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.742685] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid\x1b[01;31m\x1b[K*\x1b[m\x1b[K\n'}
+[4.742998] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.743310] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.743702] (map_to_jpeg) StderrLine: {'line': b'   57 |     void setTransforms(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGrid& map)\n'}
+[4.744035] (map_to_jpeg) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.744362] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.744835] (map_to_jpeg) StderrLine: {'line': b'   57 |     void setTransforms\x1b[01;36m\x1b[K(\x1b[m\x1b[Kconst nav_msgs::OccupancyGrid& map)\n'}
+[4.745175] (map_to_jpeg) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.745529] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.745892] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::\x1b[01;31m\x1b[KOccupancyGrid\x1b[m\x1b[K*\n'}
+[4.746224] (map_to_jpeg) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.746612] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.746952] (map_to_jpeg) StderrLine: {'line': b'   57 |     void setTransforms(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGrid& map)\n'}
+[4.747281] (map_to_jpeg) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.747658] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KOccupancyGrid\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.747991] (map_to_jpeg) StderrLine: {'line': b'   57 |     void setTransforms(const nav_msgs::\x1b[01;31m\x1b[KOccupancyGrid\x1b[m\x1b[K& map)\n'}
+[4.748317] (map_to_jpeg) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.748769] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.749120] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.749498] (map_to_jpeg) StderrLine: {'line': b'   57 |     void setTransforms(const nav_msgs::\x1b[01;31m\x1b[KOccupancyGrid\x1b[m\x1b[K& map)\n'}
+[4.749836] (map_to_jpeg) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.750163] (map_to_jpeg) StderrLine: {'line': b'      |                                                     \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.750539] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Kmap\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.750878] (map_to_jpeg) StderrLine: {'line': b'   57 |     void setTransforms(const nav_msgs::OccupancyGrid& \x1b[01;31m\x1b[Kmap\x1b[m\x1b[K)\n'}
+[4.751205] (map_to_jpeg) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.751577] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.751911] (map_to_jpeg) StderrLine: {'line': b'   57 |     void setTransforms(const nav_msgs::OccupancyGrid& \x1b[01;31m\x1b[Kmap\x1b[m\x1b[K)\n'}
+[4.752240] (map_to_jpeg) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.752627] (map_to_jpeg) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.753040] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:58:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.753429] (map_to_jpeg) StderrLine: {'line': b'   57 |     void setTransforms(const nav_msgs::OccupancyGrid& map\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[4.753764] (map_to_jpeg) StderrLine: {'line': b'      |                                                          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.754092] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.754479] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[4.754810] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.755138] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.755515] (map_to_jpeg) StderrLine: {'line': b'   62 |     void setTransforms(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::MapMetaData& meta)\n'}
+[4.755846] (map_to_jpeg) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.756196] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.756600] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid\x1b[01;31m\x1b[K*\x1b[m\x1b[K\n'}
+[4.757013] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.761431] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.761869] (map_to_jpeg) StderrLine: {'line': b'   62 |     void setTransforms(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::MapMetaData& meta)\n'}
+[4.762268] (map_to_jpeg) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.762608] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.764245] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid\x1b[01;31m\x1b[K*\x1b[m\x1b[K\n'}
+[4.764690] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.765163] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.765517] (map_to_jpeg) StderrLine: {'line': b'   62 |     void setTransforms(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::MapMetaData& meta)\n'}
+[4.765852] (map_to_jpeg) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.766309] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.766649] (map_to_jpeg) StderrLine: {'line': b'   62 |     void setTransforms\x1b[01;36m\x1b[K(\x1b[m\x1b[Kconst nav_msgs::MapMetaData& meta)\n'}
+[4.769374] (map_to_jpeg) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.769899] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.770262] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::\x1b[01;31m\x1b[KOccupancyGrid\x1b[m\x1b[K*\n'}
+[4.770596] (map_to_jpeg) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.770987] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.771324] (map_to_jpeg) StderrLine: {'line': b'   62 |     void setTransforms(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::MapMetaData& meta)\n'}
+[4.771650] (map_to_jpeg) StderrLine: {'line': b'      |                              \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.772061] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(...)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.772421] (map_to_jpeg) StderrLine: {'line': b'   62 |     void \x1b[01;31m\x1b[KsetTransforms\x1b[m\x1b[K(const nav_msgs::MapMetaData& meta)\n'}
+[4.772887] (map_to_jpeg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.773241] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.773738] (map_to_jpeg) StderrLine: {'line': b'   57 |     void \x1b[01;36m\x1b[KsetTransforms\x1b[m\x1b[K(const nav_msgs::OccupancyGrid& map)\n'}
+[4.774135] (map_to_jpeg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.774461] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KMapMetaData\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.774820] (map_to_jpeg) StderrLine: {'line': b'   62 |     void setTransforms(const nav_msgs::\x1b[01;31m\x1b[KMapMetaData\x1b[m\x1b[K& meta)\n'}
+[4.775159] (map_to_jpeg) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.775481] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.775886] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.776229] (map_to_jpeg) StderrLine: {'line': b'   62 |     void setTransforms(const nav_msgs::\x1b[01;31m\x1b[KMapMetaData\x1b[m\x1b[K& meta)\n'}
+[4.777588] (map_to_jpeg) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.778018] (map_to_jpeg) StderrLine: {'line': b'      |                                                   \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.778365] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Kmeta\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.778975] (map_to_jpeg) StderrLine: {'line': b'   62 |     void setTransforms(const nav_msgs::MapMetaData& \x1b[01;31m\x1b[Kmeta\x1b[m\x1b[K)\n'}
+[4.779313] (map_to_jpeg) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.779678] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.780159] (map_to_jpeg) StderrLine: {'line': b'   62 |     void setTransforms(const nav_msgs::MapMetaData& \x1b[01;31m\x1b[Kmeta\x1b[m\x1b[K)\n'}
+[4.780491] (map_to_jpeg) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[4.780935] (map_to_jpeg) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.781315] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.781686] (map_to_jpeg) StderrLine: {'line': b'   62 |     void setTransforms(const nav_msgs::MapMetaData& meta\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[4.782022] (map_to_jpeg) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.782346] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.782735] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[4.783062] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.783385] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:128:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.783761] (map_to_jpeg) StderrLine: {'line': b'  128 |     void setMap(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstPtr map)\n'}
+[4.784091] (map_to_jpeg) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.784416] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.784862] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid\x1b[01;31m\x1b[K*\x1b[m\x1b[K\n'}
+[4.785206] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.789691] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:128:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.790125] (map_to_jpeg) StderrLine: {'line': b'  128 |     void setMap(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstPtr map)\n'}
+[4.790534] (map_to_jpeg) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.790871] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.791201] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid\x1b[01;31m\x1b[K*\x1b[m\x1b[K\n'}
+[4.791580] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.791981] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:128:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.792415] (map_to_jpeg) StderrLine: {'line': b'  128 |     void setMap(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstPtr map)\n'}
+[4.792960] (map_to_jpeg) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.793351] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[4.793705] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:128:16:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.794040] (map_to_jpeg) StderrLine: {'line': b'  128 |     void setMap\x1b[01;36m\x1b[K(\x1b[m\x1b[Kconst nav_msgs::OccupancyGridConstPtr map)\n'}
+[4.794417] (map_to_jpeg) StderrLine: {'line': b'      |                \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.794748] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[4.795072] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.795469] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::\x1b[01;31m\x1b[KOccupancyGrid\x1b[m\x1b[K*\n'}
+[4.795798] (map_to_jpeg) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.796136] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:128:23:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.796514] (map_to_jpeg) StderrLine: {'line': b'  128 |     void setMap(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstPtr map)\n'}
+[4.796926] (map_to_jpeg) StderrLine: {'line': b'      |                       \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.797337] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[4.797685] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:128:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstPtr\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.798014] (map_to_jpeg) StderrLine: {'line': b'  128 |     void setMap(const nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstPtr\x1b[m\x1b[K map)\n'}
+[4.798428] (map_to_jpeg) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.798756] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:128:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.799084] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:128:33:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.799456] (map_to_jpeg) StderrLine: {'line': b'  128 |     void setMap(const nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstPtr\x1b[m\x1b[K map)\n'}
+[4.799778] (map_to_jpeg) StderrLine: {'line': b'      |                                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.800124] (map_to_jpeg) StderrLine: {'line': b'      |                                                      \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.800472] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:128:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.800905] (map_to_jpeg) StderrLine: {'line': b'  128 |     void setMap(const nav_msgs::OccupancyGridConstPtr \x1b[01;31m\x1b[Kmap\x1b[m\x1b[K)\n'}
+[4.801287] (map_to_jpeg) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.801616] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[4.801939] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.802350] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[4.803077] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.803809] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:238:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.804571] (map_to_jpeg) StderrLine: {'line': b'  238 |     \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGridConstPtr map_ptr_;\n'}
+[4.808536] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.810342] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[4.810883] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[4.815891] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.816311] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.816815] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)\n'}
+[4.817237] (map_to_jpeg) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.817631] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.818306] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid\x1b[01;31m\x1b[K*\x1b[m\x1b[K\n'}
+[4.818644] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.819083] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.819521] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)\n'}
+[4.820000] (map_to_jpeg) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.820371] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K*\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.820835] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::OccupancyGrid\x1b[01;31m\x1b[K*\x1b[m\x1b[K\n'}
+[4.823088] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.823459] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.826943] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)\n'}
+[4.827296] (map_to_jpeg) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.827692] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[4.828025] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:28:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kto match this \xe2\x80\x98\x1b[01m\x1b[K(\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.828357] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends\x1b[01;36m\x1b[K(\x1b[m\x1b[Kconst nav_msgs::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)\n'}
+[4.828799] (map_to_jpeg) StderrLine: {'line': b'      |                            \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[4.829153] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[4.829526] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.829859] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs::msg::\x1b[01;31m\x1b[KOccupancyGrid\x1b[m\x1b[K*\n'}
+[4.830184] (map_to_jpeg) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.830577] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:35:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.830920] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)\n'}
+[4.831248] (map_to_jpeg) StderrLine: {'line': b'      |                                   \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.831619] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[4.831943] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KOccupancyGrid\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.832267] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::\x1b[01;31m\x1b[KOccupancyGrid\x1b[m\x1b[K& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)\n'}
+[4.832980] (map_to_jpeg) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.833481] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.833834] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:45:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.834813] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::\x1b[01;31m\x1b[KOccupancyGrid\x1b[m\x1b[K& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)\n'}
+[4.835169] (map_to_jpeg) StderrLine: {'line': b'      |                                             \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.835927] (map_to_jpeg) StderrLine: {'line': b'      |                                                          \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.836336] (-) TimerEvent: {}
+[4.836585] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[Kmap\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.837016] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::OccupancyGrid& \x1b[01;31m\x1b[Kmap\x1b[m\x1b[K, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)\n'}
+[4.837758] (map_to_jpeg) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.838220] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KVector2i\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.838739] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::OccupancyGrid& map, Eigen::\x1b[01;31m\x1b[KVector2i\x1b[m\x1b[K& topLeft, Eigen::Vector2i& bottomRight)\n'}
+[4.839116] (map_to_jpeg) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.839503] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.839849] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:72:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.840219] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::OccupancyGrid& map, Eigen::\x1b[01;31m\x1b[KVector2i\x1b[m\x1b[K& topLeft, Eigen::Vector2i& bottomRight)\n'}
+[4.840591] (map_to_jpeg) StderrLine: {'line': b'      |                                                                        \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.841180] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.841592] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KtopLeft\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.841934] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::OccupancyGrid& map, Eigen::Vector2i& \x1b[01;31m\x1b[KtopLeft\x1b[m\x1b[K, Eigen::Vector2i& bottomRight)\n'}
+[4.842358] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                  \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[4.842692] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KVector2i\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.843039] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::\x1b[01;31m\x1b[KVector2i\x1b[m\x1b[K& bottomRight)\n'}
+[4.843417] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.843744] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.844102] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:98:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.844497] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::\x1b[01;31m\x1b[KVector2i\x1b[m\x1b[K& bottomRight)\n'}
+[4.844921] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                                  \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.845302] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                                          \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.845629] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:108:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[KISO C++ forbids declaration of \xe2\x80\x98\x1b[01m\x1b[KbottomRight\x1b[m\x1b[K\xe2\x80\x99 with no type [\x1b[01;31m\x1b[K-fpermissive\x1b[m\x1b[K]\n'}
+[4.845954] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& \x1b[01;31m\x1b[KbottomRight\x1b[m\x1b[K)\n'}
+[4.846342] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.846669] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:108:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.850690] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& \x1b[01;31m\x1b[KbottomRight\x1b[m\x1b[K)\n'}
+[4.851175] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                                            \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.851652] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                                                       \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.852071] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:243:119:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[4.852427] (map_to_jpeg) StderrLine: {'line': b'  243 |   static bool getMapExtends(const nav_msgs::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight\x1b[01;31m\x1b[K)\x1b[m\x1b[K\n'}
+[4.852867] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.853219] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KHectorMapTools::DistanceMeasurementProvider::DistanceMeasurementProvider()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.853563] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:124:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcall of overloaded \xe2\x80\x98\x1b[01m\x1b[KCoordinateTransformer()\x1b[m\x1b[K\xe2\x80\x99 is ambiguous\n'}
+[4.853936] (map_to_jpeg) StderrLine: {'line': b'  124 |     \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[4.854264] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.854635] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[4.855324] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:51:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KHectorMapTools::CoordinateTransformer<ConcreteScalar>::CoordinateTransformer(...) [with ConcreteScalar = float]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.855808] (map_to_jpeg) StderrLine: {'line': b'   51 |     \x1b[01;36m\x1b[KCoordinateTransformer\x1b[m\x1b[K(const nav_msgs::OccupancyGridConstPtr map)\n'}
+[4.856214] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.856632] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:46:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[KHectorMapTools::CoordinateTransformer<ConcreteScalar>::CoordinateTransformer() [with ConcreteScalar = float]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.857146] (map_to_jpeg) StderrLine: {'line': b'   46 |     \x1b[01;36m\x1b[KCoordinateTransformer\x1b[m\x1b[K()\n'}
+[4.857500] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.864925] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[4.865382] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kfloat HectorMapTools::DistanceMeasurementProvider::checkOccupancyBresenhami(const Vector2i&, const Vector2i&, Eigen::Vector2i*, unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.865805] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:155:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_ptr_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.866171] (map_to_jpeg) StderrLine: {'line': b'  155 |       int sizeX = \x1b[01;31m\x1b[Kmap_ptr_\x1b[m\x1b[K->info.width;\n'}
+[4.866534] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.936655] (-) TimerEvent: {}
+[5.037228] (-) TimerEvent: {}
+[5.137835] (-) TimerEvent: {}
+[5.238523] (-) TimerEvent: {}
+[5.338973] (-) TimerEvent: {}
+[5.349045] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint HectorMapTools::DistanceMeasurementProvider::bresenham2D(unsigned int, unsigned int, int, int, int, unsigned int, unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.349301] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:218:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_ptr_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.349423] (map_to_jpeg) StderrLine: {'line': b'  218 |       const std::vector<int8_t>& data = \x1b[01;31m\x1b[Kmap_ptr_\x1b[m\x1b[K->data;\n'}
+[5.349531] (map_to_jpeg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.360283] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[5.360686] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:56:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.360907] (map_to_jpeg) StderrLine: {'line': b'   56 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Publisher map_publisher;\n'}
+[5.361081] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.361248] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[5.363631] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:63:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.369150] (map_to_jpeg) StderrLine: {'line': b'   63 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle n_;\n'}
+[5.369790] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.370175] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[5.370625] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:64:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.371202] (map_to_jpeg) StderrLine: {'line': b'   64 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle pn_;\n'}
+[5.374672] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.375080] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[5.375499] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:88:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KImageConstPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Ksensor_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.375890] (map_to_jpeg) StderrLine: {'line': b'   88 |   void mapCallback(const sensor_msgs::\x1b[01;31m\x1b[KImageConstPtr\x1b[m\x1b[K& image)\n'}
+[5.376350] (map_to_jpeg) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.376801] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMapAsImageProvider::MapAsImageProvider()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.377250] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:68:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KMapAsImageProvider\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kpn_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.377615] (map_to_jpeg) StderrLine: {'line': b'   68 |     : \x1b[01;31m\x1b[Kpn_\x1b[m\x1b[K("~")\n'}
+[5.377972] (map_to_jpeg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.378380] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:71:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kn_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.378740] (map_to_jpeg) StderrLine: {'line': b'   71 |     image_transport_ = new image_transport::ImageTransport(\x1b[01;31m\x1b[Kn_\x1b[m\x1b[K);\n'}
+[5.379144] (map_to_jpeg) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.382161] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:73:123:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::ImageTransport::subscribe(const char [14], int, void (MapAsImageProvider::*)(const int&), MapAsImageProvider*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.383579] (map_to_jpeg) StderrLine: {'line': b'   73 |     image_transport_subscriber_map = image_transport_->subscribe("map_image_raw", 1, &MapAsImageProvider::mapCallback,this\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.384014] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                                                           \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.385161] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:36\x1b[m\x1b[K:\n'}
+[5.385607] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/image_transport/image_transport.hpp:141:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.386035] (map_to_jpeg) StderrLine: {'line': b'  141 |   Subscriber \x1b[01;36m\x1b[Ksubscribe\x1b[m\x1b[K(\n'}
+[5.386399] (map_to_jpeg) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.386754] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/image_transport/image_transport.hpp:143:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 3 from \xe2\x80\x98\x1b[01m\x1b[Kvoid (MapAsImageProvider::*)(const int&)\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst Callback&\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)>&\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.387184] (map_to_jpeg) StderrLine: {'line': b'  143 |     \x1b[01;36m\x1b[Kconst Subscriber::Callback & callback\x1b[m\x1b[K,\n'}
+[5.387727] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[5.388148] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/image_transport/image_transport.hpp:151:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.388512] (map_to_jpeg) StderrLine: {'line': b'  151 |   Subscriber \x1b[01;36m\x1b[Ksubscribe\x1b[m\x1b[K(\n'}
+[5.389004] (map_to_jpeg) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.389367] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/image_transport/image_transport.hpp:153:12:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 3 from \xe2\x80\x98\x1b[01m\x1b[Kvoid (MapAsImageProvider::*)(const int&)\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kvoid (*)(const ImageConstPtr&)\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kvoid (*)(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)\x1b[m\x1b[K\xe2\x80\x99}\n'}
+[5.389730] (map_to_jpeg) StderrLine: {'line': b'  153 |     \x1b[01;36m\x1b[Kvoid (*fp)(const ImageConstPtr &)\x1b[m\x1b[K,\n'}
+[5.390222] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.390581] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/image_transport/image_transport.hpp:165:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.390999] (map_to_jpeg) StderrLine: {'line': b'  165 |   Subscriber \x1b[01;36m\x1b[Ksubscribe\x1b[m\x1b[K(\n'}
+[5.391369] (map_to_jpeg) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.392046] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/image_transport/image_transport.hpp:165:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.392434] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:73:123:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst ImageConstPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kconst int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.392924] (map_to_jpeg) StderrLine: {'line': b'   73 |     image_transport_subscriber_map = image_transport_->subscribe("map_image_raw", 1, &MapAsImageProvider::mapCallback,this\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.393289] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                                                           \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.393643] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:36\x1b[m\x1b[K:\n'}
+[5.394049] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/image_transport/image_transport.hpp:178:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.394424] (map_to_jpeg) StderrLine: {'line': b'  178 |   Subscriber \x1b[01;36m\x1b[Ksubscribe\x1b[m\x1b[K(\n'}
+[5.394836] (map_to_jpeg) StderrLine: {'line': b'      |              \x1b[01;36m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[5.395192] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/foxy/include/image_transport/image_transport.hpp:178:14:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[5.395731] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:73:123:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  mismatched types \xe2\x80\x98\x1b[01m\x1b[Kconst ImageConstPtr\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kconst int\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.396169] (map_to_jpeg) StderrLine: {'line': b'   73 |     image_transport_subscriber_map = image_transport_->subscribe("map_image_raw", 1, &MapAsImageProvider::mapCallback,this\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.396531] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                                                           \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[5.397009] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:75:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_publisher\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publish\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.397371] (map_to_jpeg) StderrLine: {'line': b'   75 |     \x1b[01;31m\x1b[Kmap_publisher\x1b[m\x1b[K = n_.advertise<nav_msgs::OccupancyGrid>("/map_from_jpeg", 50);\n'}
+[5.397777] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.398135] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krcl_publish\x1b[m\x1b[K\n'}
+[5.403325] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[5.403867] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K::OccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.404246] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.404719] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.405126] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:75:34:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.405537] (map_to_jpeg) StderrLine: {'line': b'   75 |     map_publisher = n_.advertise<\x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGrid>("/map_from_jpeg", 50);\n'}
+[5.405902] (map_to_jpeg) StderrLine: {'line': b'      |                                  \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.411825] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:78:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KROS_INFO\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.412481] (map_to_jpeg) StderrLine: {'line': b'   78 |     \x1b[01;31m\x1b[KROS_INFO\x1b[m\x1b[K("Image to Map node started.");\n'}
+[5.412982] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.422925] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:38\x1b[m\x1b[K:\n'}
+[5.423603] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MapAsImageProvider::mapCallback(const int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.424052] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[K::OccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.424601] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.425180] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.425549] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:91:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.425947] (map_to_jpeg) StderrLine: {'line': b'   91 |     \x1b[01;36m\x1b[Knav_msgs\x1b[m\x1b[K::OccupancyGrid map;\n'}
+[5.426341] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.426701] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:93:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.427149] (map_to_jpeg) StderrLine: {'line': b'   93 |     map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kheader.stamp = image->header.stamp;\n'}
+[5.427604] (map_to_jpeg) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.428256] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:93:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[5.428783] (map_to_jpeg) StderrLine: {'line': b'   93 |     map.header.stamp = image\x1b[01;31m\x1b[K->\x1b[m\x1b[Kheader.stamp;\n'}
+[5.429241] (map_to_jpeg) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.430118] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:94:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.430530] (map_to_jpeg) StderrLine: {'line': b'   94 |     map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kheader.frame_id = "map";\n'}
+[5.430916] (map_to_jpeg) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.431350] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:95:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.432168] (map_to_jpeg) StderrLine: {'line': b'   95 |     map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kinfo.width = image->width;\n'}
+[5.433115] (map_to_jpeg) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.433513] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:95:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[5.433947] (map_to_jpeg) StderrLine: {'line': b'   95 |     map.info.width = image\x1b[01;31m\x1b[K->\x1b[m\x1b[Kwidth;\n'}
+[5.434369] (map_to_jpeg) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.434748] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:96:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.435191] (map_to_jpeg) StderrLine: {'line': b'   96 |     map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kinfo.height = image->height;\n'}
+[5.435555] (map_to_jpeg) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.435980] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:96:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[5.436353] (map_to_jpeg) StderrLine: {'line': b'   96 |     map.info.height = image\x1b[01;31m\x1b[K->\x1b[m\x1b[Kheight;\n'}
+[5.436834] (map_to_jpeg) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.437984] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:97:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.440485] (-) TimerEvent: {}
+[5.440830] (map_to_jpeg) StderrLine: {'line': b'   97 |     map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kinfo.origin.orientation.w = 1;\n'}
+[5.441334] (map_to_jpeg) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.441771] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:98:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.442171] (map_to_jpeg) StderrLine: {'line': b'   98 |     map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kinfo.resolution = resolution;\n'}
+[5.442546] (map_to_jpeg) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.442991] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:99:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.443377] (map_to_jpeg) StderrLine: {'line': b'   99 |     map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kinfo.origin.position.x = -((image->width + 1) * map.info.resolution * 0.5f);\n'}
+[5.443828] (map_to_jpeg) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.444211] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:99:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[5.444729] (map_to_jpeg) StderrLine: {'line': b'   99 |     map.info.origin.position.x = -((image\x1b[01;31m\x1b[K->\x1b[m\x1b[Kwidth + 1) * map.info.resolution * 0.5f);\n'}
+[5.445196] (map_to_jpeg) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.445563] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:99:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.445997] (map_to_jpeg) StderrLine: {'line': b'   99 |     map.info.origin.position.x = -((image->width + 1) * map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kinfo.resolution * 0.5f);\n'}
+[5.446375] (map_to_jpeg) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.446821] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:100:8:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.447218] (map_to_jpeg) StderrLine: {'line': b'  100 |     map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kinfo.origin.position.y = -((image->height + 1) * map.info.resolution * 0.5f);\n'}
+[5.447634] (map_to_jpeg) StderrLine: {'line': b'      |        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.448109] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:100:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[5.448831] (map_to_jpeg) StderrLine: {'line': b'  100 |     map.info.origin.position.y = -((image\x1b[01;31m\x1b[K->\x1b[m\x1b[Kheight + 1) * map.info.resolution * 0.5f);\n'}
+[5.449443] (map_to_jpeg) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.449891] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:100:61:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.450287] (map_to_jpeg) StderrLine: {'line': b'  100 |     map.info.origin.position.y = -((image->height + 1) * map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kinfo.resolution * 0.5f);\n'}
+[5.450726] (map_to_jpeg) StderrLine: {'line': b'      |                                                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.451134] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:104:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[5.451826] (map_to_jpeg) StderrLine: {'line': b'  104 |     for(int i=image\x1b[01;31m\x1b[K->\x1b[m\x1b[Kheight -1; i>=0; i--)\n'}
+[5.452460] (map_to_jpeg) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.452990] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:106:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[5.453392] (map_to_jpeg) StderrLine: {'line': b'  106 |  for (unsigned int j=0; j<image\x1b[01;31m\x1b[K->\x1b[m\x1b[Kwidth;j++)\n'}
+[5.453824] (map_to_jpeg) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.454201] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:108:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[5.454680] (map_to_jpeg) StderrLine: {'line': b'  108 |      data = image\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdata[i*image->width + j];\n'}
+[5.455063] (map_to_jpeg) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.455514] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:108:32:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kbase operand of \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 is not a pointer\n'}
+[5.455925] (map_to_jpeg) StderrLine: {'line': b'  108 |      data = image->data[i*image\x1b[01;31m\x1b[K->\x1b[m\x1b[Kwidth + j];\n'}
+[5.456422] (map_to_jpeg) StderrLine: {'line': b'      |                                \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.456906] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:110:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.457317] (map_to_jpeg) StderrLine: {'line': b'  110 |       map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kdata.push_back(-1);\n'}
+[5.457722] (map_to_jpeg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.458161] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:113:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.458588] (map_to_jpeg) StderrLine: {'line': b'  113 |   map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kdata.push_back(0);\n'}
+[5.459719] (map_to_jpeg) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.460151] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:116:6:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K.\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.460604] (map_to_jpeg) StderrLine: {'line': b'  116 |   map\x1b[01;31m\x1b[K.\x1b[m\x1b[Kdata.push_back(100);\n'}
+[5.467367] (map_to_jpeg) StderrLine: {'line': b'      |      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.468569] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:120:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_publisher\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_publish\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.470594] (map_to_jpeg) StderrLine: {'line': b'  120 |     \x1b[01;31m\x1b[Kmap_publisher\x1b[m\x1b[K.publish(map);\n'}
+[5.471089] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.471491] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krcl_publish\x1b[m\x1b[K\n'}
+[5.471904] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:120:30:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.472356] (map_to_jpeg) StderrLine: {'line': b'  120 |     map_publisher.publish(map\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[5.475941] (map_to_jpeg) StderrLine: {'line': b'      |                              \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[5.476376] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.476866] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:127:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.477288] (map_to_jpeg) StderrLine: {'line': b'  127 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::init(argc, argv, "image_to_map_node");\n'}
+[5.477679] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.478147] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:129:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.478518] (map_to_jpeg) StderrLine: {'line': b'  129 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle nh("~");\n'}
+[5.478954] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.479350] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:130:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Knh\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.479790] (map_to_jpeg) StderrLine: {'line': b'  130 |   \x1b[01;31m\x1b[Knh\x1b[m\x1b[K.param("resolution", resolution, 0.05);\n'}
+[5.480209] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.480570] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:135:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[5.481085] (map_to_jpeg) StderrLine: {'line': b'  135 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::spin();\n'}
+[5.481450] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.540753] (-) TimerEvent: {}
+[5.641356] (-) TimerEvent: {}
+[5.741840] (-) TimerEvent: {}
+[5.823693] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42\x1b[m\x1b[K:\n'}
+[5.823998] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.824181] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.824351] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.824566] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.824819] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;36m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.824990] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.825275] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.825499] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;31m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[5.825668] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.825832] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.826073] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;36m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[5.826240] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.828051] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.828280] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.828458] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.828636] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.828906] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;36m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.829137] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.829370] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.829599] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;31m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[5.829856] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.830040] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.830208] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;36m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[5.830385] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.832373] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.833022] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.833562] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.834058] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.834523] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;36m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.835048] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.835530] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.836084] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;31m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[5.836841] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.837519] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.840046] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;36m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[5.840590] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.841203] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:62:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(int)\x1b[m\x1b[K\xe2\x80\x99 cannot be overloaded with \xe2\x80\x98\x1b[01m\x1b[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.841732] (map_to_jpeg) StderrLine: {'line': b'   62 |     void \x1b[01;31m\x1b[KsetTransforms\x1b[m\x1b[K(const nav_msgs::MapMetaData& meta)\n'}
+[5.842212] (-) TimerEvent: {}
+[5.842520] (map_to_jpeg) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.843010] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:57:10:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kprevious declaration \xe2\x80\x98\x1b[01m\x1b[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.843474] (map_to_jpeg) StderrLine: {'line': b'   57 |     void \x1b[01;36m\x1b[KsetTransforms\x1b[m\x1b[K(const nav_msgs::OccupancyGrid& map)\n'}
+[5.844018] (map_to_jpeg) StderrLine: {'line': b'      |          \x1b[01;36m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.844471] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.845007] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.845471] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.845989] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.847708] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;36m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.848127] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.848478] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.852773] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;31m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[5.853260] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.853706] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.854059] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;36m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[5.854476] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.895493] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.896346] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.896879] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.897364] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.897742] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;36m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.898108] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.900324] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[5.900885] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.901298] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.902017] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.902467] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;36m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[5.902816] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.907472] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[5.913225] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;31m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[5.913683] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.914053] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[5.914426] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;36m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[5.914798] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[5.915136] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KHectorMapTools::CoordinateTransformer<ConcreteScalar>::CoordinateTransformer(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.915530] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:53:28:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::map\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.915878] (map_to_jpeg) StderrLine: {'line': b'   53 |       this->setTransforms(*\x1b[01;31m\x1b[Kmap\x1b[m\x1b[K);\n'}
+[5.916215] (map_to_jpeg) StderrLine: {'line': b'      |                            \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.916600] (map_to_jpeg) StderrLine: {'line': b'      |                            \x1b[32m\x1b[Kstd::map\x1b[m\x1b[K\n'}
+[5.917099] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/map:61\x1b[m\x1b[K,\n'}
+[5.917490] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:20\x1b[m\x1b[K,\n'}
+[5.917836] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[5.918175] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.918596] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[5.918937] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.919334] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.919866] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[5.922502] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.922893] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.923516] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[5.923941] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:29\x1b[m\x1b[K:\n'}
+[5.924995] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_map.h:100:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::map\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[5.925424] (map_to_jpeg) StderrLine: {'line': b'  100 |     class \x1b[01;36m\x1b[Kmap\x1b[m\x1b[K\n'}
+[5.926146] (map_to_jpeg) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.926527] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42\x1b[m\x1b[K:\n'}
+[5.926936] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.927339] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:59:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::map\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.927686] (map_to_jpeg) StderrLine: {'line': b'   59 |       this->setTransforms(\x1b[01;31m\x1b[Kmap\x1b[m\x1b[K.info);\n'}
+[5.928023] (map_to_jpeg) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.928380] (map_to_jpeg) StderrLine: {'line': b'      |                           \x1b[32m\x1b[Kstd::map\x1b[m\x1b[K\n'}
+[5.929094] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/map:61\x1b[m\x1b[K,\n'}
+[5.929471] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:20\x1b[m\x1b[K,\n'}
+[5.929924] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[5.930288] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.930739] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[5.931085] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.931427] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.932710] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[5.934985] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.935491] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.935855] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[5.936193] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:29\x1b[m\x1b[K:\n'}
+[5.936611] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_map.h:100:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::map\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[5.937043] (map_to_jpeg) StderrLine: {'line': b'  100 |     class \x1b[01;36m\x1b[Kmap\x1b[m\x1b[K\n'}
+[5.937429] (map_to_jpeg) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.937774] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42\x1b[m\x1b[K:\n'}
+[5.938112] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.938502] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:64:81:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmeta\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.938864] (map_to_jpeg) StderrLine: {'line': b'   64 |       origo_ = (Eigen::Matrix<ConcreteScalar, 2, 1>(static_cast<ConcreteScalar>(\x1b[01;31m\x1b[Kmeta\x1b[m\x1b[K.origin.position.x),static_cast<ConcreteScalar>(meta.origin.position.y)));\n'}
+[5.939292] (map_to_jpeg) StderrLine: {'line': b'      |                                                                                 \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[5.939634] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42\x1b[m\x1b[K:\n'}
+[5.940028] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid HectorMapTools::DistanceMeasurementProvider::setMap(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.940557] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:130:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_ptr_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[5.941040] (map_to_jpeg) StderrLine: {'line': b'  130 |       \x1b[01;31m\x1b[Kmap_ptr_\x1b[m\x1b[K = map;\n'}
+[5.941384] (map_to_jpeg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[5.941721] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:130:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::map\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[5.942123] (map_to_jpeg) StderrLine: {'line': b'  130 |       map_ptr_ = \x1b[01;31m\x1b[Kmap\x1b[m\x1b[K;\n'}
+[5.942458] (-) TimerEvent: {}
+[5.942703] (map_to_jpeg) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[5.943141] (map_to_jpeg) StderrLine: {'line': b'      |                  \x1b[32m\x1b[Kstd::map\x1b[m\x1b[K\n'}
+[5.943486] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/map:61\x1b[m\x1b[K,\n'}
+[5.943907] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:20\x1b[m\x1b[K,\n'}
+[5.944285] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[5.944626] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[5.945084] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[5.945425] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[5.945804] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[5.946202] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[5.946540] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[5.946929] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[5.947271] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[5.947607] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:29\x1b[m\x1b[K:\n'}
+[5.948009] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_map.h:100:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::map\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[5.948361] (map_to_jpeg) StderrLine: {'line': b'  100 |     class \x1b[01;36m\x1b[Kmap\x1b[m\x1b[K\n'}
+[5.948765] (map_to_jpeg) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.008022] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42\x1b[m\x1b[K:\n'}
+[6.008366] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kfloat HectorMapTools::DistanceMeasurementProvider::checkOccupancyBresenhami(const Vector2i&, const Vector2i&, Eigen::Vector2i*, unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.008563] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:155:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_ptr_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.009666] (map_to_jpeg) StderrLine: {'line': b'  155 |       int sizeX = \x1b[01;31m\x1b[Kmap_ptr_\x1b[m\x1b[K->info.width;\n'}
+[6.010093] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.042724] (-) TimerEvent: {}
+[6.049202] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kint HectorMapTools::DistanceMeasurementProvider::bresenham2D(unsigned int, unsigned int, int, int, int, unsigned int, unsigned int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.049717] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:218:41:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_ptr_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.050122] (map_to_jpeg) StderrLine: {'line': b'  218 |       const std::vector<int8_t>& data = \x1b[01;31m\x1b[Kmap_ptr_\x1b[m\x1b[K->data;\n'}
+[6.050475] (map_to_jpeg) StderrLine: {'line': b'      |                                         \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.056045] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:\x1b[m\x1b[K In static member function \xe2\x80\x98\x1b[01m\x1b[Kstatic bool HectorMapTools::getMapExtends(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.056603] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:253:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kstd::map\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.057121] (map_to_jpeg) StderrLine: {'line': b'  253 |     int width = \x1b[01;31m\x1b[Kmap\x1b[m\x1b[K.info.width;\n'}
+[6.057470] (map_to_jpeg) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.057797] (map_to_jpeg) StderrLine: {'line': b'      |                 \x1b[32m\x1b[Kstd::map\x1b[m\x1b[K\n'}
+[6.058168] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/c++/9/map:61\x1b[m\x1b[K,\n'}
+[6.058495] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/client.hpp:20\x1b[m\x1b[K,\n'}
+[6.058818] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[6.059220] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[6.059547] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24\x1b[m\x1b[K,\n'}
+[6.059883] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[6.060263] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[6.060693] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executor.hpp:33\x1b[m\x1b[K,\n'}
+[6.061102] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[6.061432] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[6.061899] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146\x1b[m\x1b[K,\n'}
+[6.062319] (map_to_jpeg) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:29\x1b[m\x1b[K:\n'}
+[6.062645] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/bits/stl_map.h:100:11:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd::map\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[6.062968] (map_to_jpeg) StderrLine: {'line': b'  100 |     class \x1b[01;36m\x1b[Kmap\x1b[m\x1b[K\n'}
+[6.063335] (map_to_jpeg) StderrLine: {'line': b'      |           \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.063660] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42\x1b[m\x1b[K:\n'}
+[6.064001] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:285:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KtopLeft\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.064350] (map_to_jpeg) StderrLine: {'line': b'  285 |       \x1b[01;31m\x1b[KtopLeft\x1b[m\x1b[K = Eigen::Vector2i(xMinTemp,yMinTemp);\n'}
+[6.064787] (map_to_jpeg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[6.070170] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:286:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KbottomRight\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.070721] (map_to_jpeg) StderrLine: {'line': b'  286 |       \x1b[01;31m\x1b[KbottomRight\x1b[m\x1b[K = Eigen::Vector2i(xMaxTemp+1, yMaxTemp+1);\n'}
+[6.071062] (map_to_jpeg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.078381] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:\x1b[m\x1b[K At global scope:\n'}
+[6.078908] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:95:42:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoseStampedConstPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.079269] (map_to_jpeg) StderrLine: {'line': b'   95 |   void poseCallback(const geometry_msgs::\x1b[01;31m\x1b[KPoseStampedConstPtr\x1b[m\x1b[K& pose)\n'}
+[6.079666] (map_to_jpeg) StderrLine: {'line': b'      |                                          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.091398] (map_to_jpeg) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42\x1b[m\x1b[K:\n'}
+[6.092032] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.092842] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;31m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[6.093473] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.093849] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:19:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.094277] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::\x1b[01;36m\x1b[KOccupancyGridConstrPtr\x1b[m\x1b[K nav_msgs::msg::OccupancyGrid*\n'}
+[6.094651] (map_to_jpeg) StderrLine: {'line': b'      |                   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.095007] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K,\x1b[m\x1b[K\xe2\x80\x99 or \xe2\x80\x98\x1b[01m\x1b[K...\x1b[m\x1b[K\xe2\x80\x99 before \xe2\x80\x98\x1b[01m\x1b[K::\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.095436] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;31m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[6.095991] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.096506] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:37:50:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin definition of macro \xe2\x80\x98\x1b[01m\x1b[Knav_msgs\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.096983] (map_to_jpeg) StderrLine: {'line': b'   37 | #define nav_msgs::OccupancyGridConstrPtr nav_msgs\x1b[01;36m\x1b[K::\x1b[m\x1b[Kmsg::OccupancyGrid*\n'}
+[6.097410] (map_to_jpeg) StderrLine: {'line': b'      |                                                  \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.097756] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:282:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.098160] (map_to_jpeg) StderrLine: {'line': b'  282 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Subscriber map_sub_;\n'}
+[6.098515] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.098854] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[6.099317] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:283:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.099669] (map_to_jpeg) StderrLine: {'line': b'  283 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::Subscriber pose_sub_;\n'}
+[6.100156] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.100506] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[6.101028] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:291:18:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KPoseStampedConstPtr\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kgeometry_msgs\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[6.101427] (map_to_jpeg) StderrLine: {'line': b'  291 |   geometry_msgs::\x1b[01;31m\x1b[KPoseStampedConstPtr\x1b[m\x1b[K pose_ptr_;\n'}
+[6.101928] (map_to_jpeg) StderrLine: {'line': b'      |                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.102339] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:297:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.102684] (map_to_jpeg) StderrLine: {'line': b'  297 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle n_;\n'}
+[6.103031] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.103370] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[6.103806] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:298:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcos\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.104151] (map_to_jpeg) StderrLine: {'line': b'  298 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::NodeHandle pn_;\n'}
+[6.104577] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.105032] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[32m\x1b[Kcos\x1b[m\x1b[K\n'}
+[6.105404] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KMapAsImageProvider::MapAsImageProvider()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.105778] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:61:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KMapAsImageProvider\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[Kpn_\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.106136] (map_to_jpeg) StderrLine: {'line': b'   61 |     : \x1b[01;31m\x1b[Kpn_\x1b[m\x1b[K("~")\n'}
+[6.106563] (map_to_jpeg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.106906] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:64:60:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kn_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.107347] (map_to_jpeg) StderrLine: {'line': b'   64 |     image_transport_ = new image_transport::ImageTransport(\x1b[01;31m\x1b[Kn_\x1b[m\x1b[K);\n'}
+[6.107784] (map_to_jpeg) StderrLine: {'line': b'      |                                                            \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.109977] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:69:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpose_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.110561] (map_to_jpeg) StderrLine: {'line': b'   69 |     \x1b[01;31m\x1b[Kpose_sub_\x1b[m\x1b[K = n_.subscribe("pose", 1, &MapAsImageProvider::poseCallback, this);\n'}
+[6.110933] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.121438] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:70:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kmap_sub_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.122227] (map_to_jpeg) StderrLine: {'line': b'   70 |     \x1b[01;31m\x1b[Kmap_sub_\x1b[m\x1b[K = n_.subscribe("map", 1, &MapAsImageProvider::mapCallback, this);\n'}
+[6.125627] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.130623] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:86:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KROS_INFO\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.131309] (map_to_jpeg) StderrLine: {'line': b'   86 |     \x1b[01;31m\x1b[KROS_INFO\x1b[m\x1b[K("Map to Image node started.");\n'}
+[6.131727] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.139870] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MapAsImageProvider::poseCallback(const int&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.140470] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:97:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpose_ptr_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.141071] (map_to_jpeg) StderrLine: {'line': b'   97 |     \x1b[01;31m\x1b[Kpose_ptr_\x1b[m\x1b[K = pose;\n'}
+[6.141475] (map_to_jpeg) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.141829] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid MapAsImageProvider::mapCallback(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.142285] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:103:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.142630] (map_to_jpeg) StderrLine: {'line': b'  103 |     int size_x = map\x1b[01;31m\x1b[K->\x1b[m\x1b[Kinfo.width;\n'}
+[6.143006] (-) TimerEvent: {}
+[6.143242] (map_to_jpeg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.143686] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:104:21:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.144029] (map_to_jpeg) StderrLine: {'line': b'  104 |     int size_y = map\x1b[01;31m\x1b[K->\x1b[m\x1b[Kinfo.height;\n'}
+[6.144366] (map_to_jpeg) StderrLine: {'line': b'      |                     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.146966] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:107:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KROS_INFO\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.147490] (map_to_jpeg) StderrLine: {'line': b'  107 |       \x1b[01;31m\x1b[KROS_INFO\x1b[m\x1b[K("Map size is only x: %d,  y: %d . Not running map to image conversion", size_x, size_y);\n'}
+[6.147912] (map_to_jpeg) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.154468] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:112:70:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpose_ptr_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.154994] (map_to_jpeg) StderrLine: {'line': b'  112 |     if (image_transport_publisher_full_.getNumSubscribers() > 0  && (\x1b[01;31m\x1b[Kpose_ptr_\x1b[m\x1b[K)){\n'}
+[6.155485] (map_to_jpeg) StderrLine: {'line': b'      |                                                                      \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.155834] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:122:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.156203] (map_to_jpeg) StderrLine: {'line': b'  122 |       const std::vector<int8_t>& map_data (map\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdata);\n'}
+[6.156595] (map_to_jpeg) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.168304] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:168:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.169064] (map_to_jpeg) StderrLine: {'line': b'  168 |       world_map_transformer_.setTransforms(*map\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[6.169483] (map_to_jpeg) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.178675] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:177:15:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ktf\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.179305] (map_to_jpeg) StderrLine: {'line': b'  177 |  double yaw = \x1b[01;31m\x1b[Ktf\x1b[m\x1b[K::getYaw(pose_ptr_->pose.orientation);\n'}
+[6.179788] (map_to_jpeg) StderrLine: {'line': b'      |               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.182488] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:187:71:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kpose_ptr_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.183519] (map_to_jpeg) StderrLine: {'line': b'  187 |     if ((image_transport_publisher_tile_.getNumSubscribers() > 0) && (\x1b[01;31m\x1b[Kpose_ptr_\x1b[m\x1b[K)){\n'}
+[6.184060] (map_to_jpeg) StderrLine: {'line': b'      |                                                                       \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.184535] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:189:48:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K)\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.185087] (map_to_jpeg) StderrLine: {'line': b'  189 |       world_map_transformer_.setTransforms(*map\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[6.185534] (map_to_jpeg) StderrLine: {'line': b'      |                                                \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.214381] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:246:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kmissing template arguments before \xe2\x80\x98\x1b[01m\x1b[K->\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[6.216320] (map_to_jpeg) StderrLine: {'line': b'  246 |       const std::vector<int8_t>& map_data (map\x1b[01;31m\x1b[K->\x1b[m\x1b[Kdata);\n'}
+[6.216860] (map_to_jpeg) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[6.217226] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.217631] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:309:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.218019] (map_to_jpeg) StderrLine: {'line': b'  309 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::init(argc, argv, "map_to_image_node");\n'}
+[6.218452] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.218974] (map_to_jpeg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:313:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kros\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[6.219325] (map_to_jpeg) StderrLine: {'line': b'  313 |   \x1b[01;31m\x1b[Kros\x1b[m\x1b[K::spin();\n'}
+[6.219732] (map_to_jpeg) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[6.252837] (-) TimerEvent: {}
+[6.356617] (-) TimerEvent: {}
+[6.457839] (-) TimerEvent: {}
+[6.558476] (-) TimerEvent: {}
+[6.659057] (-) TimerEvent: {}
+[6.760040] (-) TimerEvent: {}
+[6.799393] (map_to_jpeg) StderrLine: {'line': b'make[2]: *** [CMakeFiles/image_to_map_node.dir/build.make:63: CMakeFiles/image_to_map_node.dir/src/image_to_map_node.cpp.o] Error 1\n'}
+[6.800470] (map_to_jpeg) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/image_to_map_node.dir/all] Error 2\n'}
+[6.801144] (map_to_jpeg) StderrLine: {'line': b'make[1]: *** Waiting for unfinished jobs....\n'}
+[6.860367] (-) TimerEvent: {}
+[6.960884] (-) TimerEvent: {}
+[7.061790] (-) TimerEvent: {}
+[7.162553] (-) TimerEvent: {}
+[7.263674] (-) TimerEvent: {}
+[7.364478] (-) TimerEvent: {}
+[7.465204] (-) TimerEvent: {}
+[7.568067] (-) TimerEvent: {}
+[7.668919] (-) TimerEvent: {}
+[7.683925] (map_to_jpeg) StderrLine: {'line': b'make[2]: *** [CMakeFiles/map_to_image_node.dir/build.make:63: CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o] Error 1\n'}
+[7.685529] (map_to_jpeg) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/map_to_image_node.dir/all] Error 2\n'}
+[7.690816] (map_to_jpeg) StderrLine: {'line': b'make: *** [Makefile:95: all] Error 2\n'}
+[7.692462] (map_to_jpeg) CommandEnded: {'returncode': 2}
+[7.769582] (-) TimerEvent: {}
+[7.875587] (-) TimerEvent: {}
+[7.977848] (-) TimerEvent: {}
+[8.079138] (-) TimerEvent: {}
+[8.180596] (-) TimerEvent: {}
+[8.283054] (-) TimerEvent: {}
+[8.336154] (map_to_jpeg) JobEnded: {'identifier': 'map_to_jpeg', 'rc': 2}
+[8.524074] (-) TimerEvent: {}
+[8.525211] (-) EventReactorShutdown: {}

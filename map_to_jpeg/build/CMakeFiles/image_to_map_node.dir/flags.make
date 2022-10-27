@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_FLAGS = -g  
 
-CXX_DEFINES = 
+CXX_DEFINES = -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -DSPDLOG_COMPILED_LIB
 
-CXX_INCLUDES = -I/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include 
+CXX_INCLUDES = -I/usr/include/eigen3 -I/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include -isystem /opt/ros/foxy/include -isystem /usr/include/opencv4 
 

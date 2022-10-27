@@ -27,17 +27,17 @@
  * POSSIBILITY OF SUCH DAMAGE.
  */
 
-#include "rclcpp/rclcpp.h"
+#include <rclcpp/rclcpp.hpp>
 
-#include <nav_msgs/msg/GetMap.h>
-#include <geometry_msgs/msg/Quaternion.h>
-#include <geometry_msgs/msg/PoseStamped.h>
-#include <sensor_msgs/msg/image_encodings.h>
-#include <image_transport/image_transport.h>
+#include <nav_msgs/srv/get_map.hpp>
+#include <geometry_msgs/msg/quaternion.hpp>
+#include <geometry_msgs/msg/pose_stamped.hpp>
+#include <sensor_msgs/image_encodings.hpp>
+#include <image_transport/image_transport.hpp>
 #include <Eigen/Geometry>
 #include <HectorMapTools.h>
 #include <math.h>
-#include <tf/transform_datatypes.h>
+#include <tf2/transform_datatypes.h>
 
 using namespace std;
 
@@ -47,35 +47,31 @@ double resolution = 0.05;
 /**
  * @brief This node provides images as occupancy grid maps.
  */
-class MapAsImageProvider
+class MapAsImageProvider : public rclcpp::Node
 {
 
 public:
 
   // Publisher for the map
-  ros::Publisher map_publisher;
+  rclcpp::Publisher <nav_msgs::msg::OccupancyGrid>::SharedPtr map_publisher;
 
   //Subscriber to the image topic
   image_transport::Subscriber image_transport_subscriber_map;
 
   image_transport::ImageTransport* image_transport_;
 
-  ros::NodeHandle n_;
-  ros::NodeHandle pn_;
+  MapAsImageProvider(): rclcpp::Node("map_to_image_pub")
 
-
-  MapAsImageProvider()
-    : pn_("~")
   {
 
-    image_transport_ = new image_transport::ImageTransport(n_);
+    //image_transport_ = new image_transport::ImageTransport();
     //subscribe to the image topic representing the map
-    image_transport_subscriber_map = image_transport_->subscribe("map_image_raw", 1, &MapAsImageProvider::mapCallback,this); 
+    //image_transport_subscriber_map = image_transport_->subscribe("map_image_raw", 1, &MapAsImageProvider::mapCallback,this); 
     // publish the map as an occupancy grid
-    map_publisher = n_.advertise<nav_msgs::OccupancyGrid>("/map_from_jpeg", 50); 
+    map_publisher = this->create_publisher<nav_msgs::msg::OccupancyGrid>("map_raw", 10)
 
 
-    ROS_INFO("Image to Map node started.");
+    RCLCPP_INFO(this->get_logger(),"Image to Map node started.");
   }
 
   ~MapAsImageProvider()
@@ -85,7 +81,7 @@ public:
 
 
   //The map->image conversion runs every time a new map is received
-  void mapCallback(const sensor_msgs::ImageConstPtr& image)
+  void mapCallback(const sensor_msgs::msg::Image*& image)
   {
 
     nav_msgs::OccupancyGrid map;
@@ -124,15 +120,15 @@ public:
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "image_to_map_node");
+  rclcpp::init(argc, argv, "image_to_map_node");
 
-  ros::NodeHandle nh("~");
+  rclcpp::NodeHandle nh("~");
   nh.param("resolution", resolution, 0.05); 
 
   // The 
   MapAsImageProvider map_image_provider;
 
-  ros::spin();
+  rclcpp::spin();
 
   return 0;
 }

@@ -1,0 +1,19 @@
+[0.047s] Invoking command in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg': /usr/bin/cmake --build /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg -- -j4 -l4
+[0.158s] [35m[1mScanning dependencies of target map_to_image_node[0m
+[0.193s] [ 25%] [32mBuilding CXX object CMakeFiles/image_to_map_node.dir/src/image_to_map_node.cpp.o[0m
+[0.260s] [ 50%] [32mBuilding CXX object CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o[0m
+[0.457s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:35:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/sensor_msgs/image_encodings.hpp: No such file or directory
+[0.457s]    35 | #include [01;31m[K<sensor_msgs/sensor_msgs/image_encodings.hpp>[m[K
+[0.458s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.458s] compilation terminated.
+[0.460s] make[2]: *** [CMakeFiles/image_to_map_node.dir/build.make:63: CMakeFiles/image_to_map_node.dir/src/image_to_map_node.cpp.o] Error 1
+[0.461s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/image_to_map_node.dir/all] Error 2
+[0.461s] make[1]: *** Waiting for unfinished jobs....
+[0.645s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:40:10:[m[K [01;31m[Kfatal error: [m[KEigen/Geometry: No such file or directory
+[0.645s]    40 | #include [01;31m[K<Eigen/Geometry>[m[K
+[0.645s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[0.645s] compilation terminated.
+[0.649s] make[2]: *** [CMakeFiles/map_to_image_node.dir/build.make:63: CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o] Error 1
+[0.649s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/map_to_image_node.dir/all] Error 2
+[0.650s] make: *** [Makefile:95: all] Error 2
+[0.653s] Invoked command in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg' returned '2': /usr/bin/cmake --build /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg -- -j4 -l4

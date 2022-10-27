@@ -1,0 +1,18 @@
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found nav_msgs: 2.0.5 (/opt/ros/foxy/share/nav_msgs/cmake)
+-- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+-- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+-- Found cv_bridge: 3.0.6 (/opt/ros/foxy/share/cv_bridge/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg
+[35m[1mScanning dependencies of target image_to_map_node[0m
+[ 25%] [32mBuilding CXX object CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/image_to_map_node.dir/src/image_to_map_node.cpp.o[0m

@@ -1,0 +1,19 @@
+[0.051s] Invoking command in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg': /usr/bin/cmake --build /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg -- -j4 -l4
+[0.203s] [35m[1mScanning dependencies of target image_to_map_node[0m
+[0.247s] [ 25%] [32mBuilding CXX object CMakeFiles/image_to_map_node.dir/src/image_to_map_node.cpp.o[0m
+[0.271s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:30:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.hpp: No such file or directory
+[0.271s]    30 | #include [01;31m[K"rclcpp/rclcpp.hpp"[m[K
+[0.271s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[0.272s] compilation terminated.
+[0.275s] make[2]: *** [CMakeFiles/image_to_map_node.dir/build.make:63: CMakeFiles/image_to_map_node.dir/src/image_to_map_node.cpp.o] Error 1
+[0.276s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/image_to_map_node.dir/all] Error 2
+[0.276s] make[1]: *** Waiting for unfinished jobs....
+[0.277s] [ 50%] [32mBuilding CXX object CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o[0m
+[0.305s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:29:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+[0.306s]    29 | #include [01;31m[K"rclcpp/rclcpp.h"[m[K
+[0.306s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.306s] compilation terminated.
+[0.308s] make[2]: *** [CMakeFiles/map_to_image_node.dir/build.make:63: CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o] Error 1
+[0.309s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/map_to_image_node.dir/all] Error 2
+[0.313s] make: *** [Makefile:95: all] Error 2
+[0.323s] Invoked command in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg' returned '2': /usr/bin/cmake --build /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg -- -j4 -l4

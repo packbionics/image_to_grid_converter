@@ -26,12 +26,12 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 //=================================================================================================
 
-#include "rclcpp/rclcpp.h"
+#include "rclcpp/rclcpp.hpp"
 
-#include <nav_msgs/msg/GetMap.h>
-#include <geometry_msgs/msg/Quaternion.h>
-#include <geometry_msgs/msg/PoseStamped.h>
-#include <sensor_msgs/msg/image_encodings.h>
+#include <nav_msgs/srv/get_map.h>
+#include <geometry_msgs/msg/quaternion.hpp>
+#include <geometry_msgs/msg/pose_stamped.h>
+#include <sensor_msgs/image_encodings.hpp>
 
 
 #include <cv_bridge/cv_bridge.h>	
@@ -51,7 +51,7 @@ using namespace cv;
  * @brief This node provides occupancy grid maps as images via image_transport, so the transmission consumes less bandwidth.
  * The provided code is a incomplete proof of concept.
  */
-class MapAsImageProvider
+class MapAsImageProvider : public rclcpp::Node
 {
 
 public:
@@ -83,7 +83,7 @@ public:
     p_size_tiled_map_image_x_ = 64;
     p_size_tiled_map_image_y_ = 64;
 
-    ROS_INFO("Map to Image node started.");
+    RCLCPP_INFO(this->get_logger(),"Map to Image node started.");
   }
 
   ~MapAsImageProvider()
@@ -104,7 +104,7 @@ public:
     int size_y = map->info.height;
 
     if ((size_x < 3) || (size_y < 3) ){
-      ROS_INFO("Map size is only x: %d,  y: %d . Not running map to image conversion", size_x, size_y);
+      RCLCPP_INFO(this->get_logger(),"Map size is only x: %d,  y: %d . Not running map to image conversion", size_x, size_y);
       return;
     }
 
@@ -279,8 +279,8 @@ public:
     }
   }
 
-  ros::Subscriber map_sub_;
-  ros::Subscriber pose_sub_;
+  rclcpp::Subscriber map_sub_;
+  rclcpp::Subscriber pose_sub_;
 
   image_transport::Publisher image_transport_publisher_full_;
   image_transport::Publisher image_transport_publisher_full_position_;
@@ -294,8 +294,8 @@ public:
   CvImage cv_img_full_with_position_;
   CvImage cv_img_tile_;
 
-  ros::NodeHandle n_;
-  ros::NodeHandle pn_;
+  rclcpp::NodeHandle n_;
+  rclcpp::NodeHandle pn_;
 
   int p_size_tiled_map_image_x_;
   int p_size_tiled_map_image_y_;
@@ -306,11 +306,11 @@ public:
 
 int main(int argc, char** argv)
 {
-  ros::init(argc, argv, "map_to_image_node");
+  rclcpp::init(argc, argv, "map_to_image_node");
 
   MapAsImageProvider map_image_provider;
 
-  ros::spin();
+  rclcpp::spin();
 
   return 0;
 }

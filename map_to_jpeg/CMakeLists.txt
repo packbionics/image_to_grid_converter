@@ -12,7 +12,7 @@ find_package(tf2 REQUIRED)
 find_package(image_transport REQUIRED)
 find_package(cv_bridge REQUIRED)
 
-include_directories(${EIGEN_INCLUDE_DIRS} include ${catkin_INCLUDE_DIRS})
+include_directories(${EIGEN3_INCLUDE_DIRS} include)
 
 add_executable(map_to_image_node src/map_to_image_node.cpp)
 ament_target_dependencies(map_to_image_node
@@ -28,4 +28,13 @@ target_link_libraries(map_to_image_node)
 target_link_libraries(map_to_image_node ${OpenCV_LIBRARIES})
 
 add_executable(image_to_map_node src/image_to_map_node.cpp)
+ament_target_dependencies(image_to_map_node
+"geometry_msgs"
+"nav_msgs"
+"tf2"
+"image_transport"
+"cv_bridge"
+"sensor_msgs"
+"rclcpp"
+)
 target_link_libraries (image_to_map_node )

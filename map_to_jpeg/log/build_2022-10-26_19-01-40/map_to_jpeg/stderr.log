@@ -1,0 +1,14 @@
+[01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:35:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/sensor_msgs/image_encodings.hpp: No such file or directory
+   35 | #include [01;31m[K<sensor_msgs/sensor_msgs/image_encodings.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/image_to_map_node.dir/build.make:63: CMakeFiles/image_to_map_node.dir/src/image_to_map_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/image_to_map_node.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:34:10:[m[K [01;31m[Kfatal error: [m[Ksensor_msgs/sensor_msgs/image_encodings.hpp: No such file or directory
+   34 | #include [01;31m[K<sensor_msgs/sensor_msgs/image_encodings.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/map_to_image_node.dir/build.make:63: CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/map_to_image_node.dir/all] Error 2
+make: *** [Makefile:95: all] Error 2

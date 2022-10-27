@@ -1,0 +1,422 @@
+[0.032s] Invoking command in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg': /usr/bin/cmake --build /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg -- -j4 -l4
+[0.150s] [35m[1mScanning dependencies of target image_to_map_node[0m
+[0.229s] [ 25%] [32mBuilding CXX object CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o[0m
+[0.257s] [ 50%] [32mBuilding CXX object CMakeFiles/image_to_map_node.dir/src/image_to_map_node.cpp.o[0m
+[4.064s] In file included from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:39[m[K:
+[4.064s] [01m[K/opt/ros/foxy/include/image_transport/image_transport.h:41:89:[m[K [01;36m[Knote: [m[K#pragma message: Warning: This header is deprecated. Use 'image_transport.hpp' instead
+[4.065s]    41 | #pragma message ("Warning: This header is deprecated. Use 'image_transport.hpp' instead"[01;36m[K)[m[K
+[4.065s]       |                                                                                         [01;36m[K^[m[K
+[5.144s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:[m[K In constructor ‘[01m[KMapAsImageProvider::MapAsImageProvider()[m[K’:
+[5.145s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:63:56:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >::Publisher()[m[K’
+[5.145s]    63 |   MapAsImageProvider(): rclcpp::Node("map_to_image_pub"[01;31m[K)[m[K
+[5.146s]       |                                                        [01;31m[K^[m[K
+[5.146s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[5.147s]                  from [01m[K/opt/ros/foxy/include/rclcpp/subscription.hpp:50[m[K,
+[5.147s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:25[m[K,
+[5.147s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[5.148s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.148s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[5.149s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[5.149s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.150s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[5.150s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[5.150s]                  from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:30[m[K:
+[5.151s] [01m[K/opt/ros/foxy/include/rclcpp/publisher.hpp:73:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Publisher<MessageT, AllocatorT>::Publisher(rclcpp::node_interfaces::NodeBaseInterface*, const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&) [with MessageT = nav_msgs::msg::OccupancyGrid_<std::allocator<void> >; AllocatorT = std::allocator<void>; std::string = std::__cxx11::basic_string<char>][m[K’
+[5.151s]    73 |   [01;36m[KPublisher[m[K(
+[5.151s]       |   [01;36m[K^~~~~~~~~[m[K
+[5.152s] [01m[K/opt/ros/foxy/include/rclcpp/publisher.hpp:73:3:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 0 provided
+[5.152s] [01m[K/opt/ros/foxy/include/rclcpp/publisher.hpp:51:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Publisher<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >::Publisher(const rclcpp::Publisher<nav_msgs::msg::OccupancyGrid_<std::allocator<void> > >&)[m[K’
+[5.152s]    51 | class [01;36m[KPublisher[m[K : public PublisherBase
+[5.153s]       |       [01;36m[K^~~~~~~~~[m[K
+[5.153s] [01m[K/opt/ros/foxy/include/rclcpp/publisher.hpp:51:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[5.153s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:67:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kn_[m[K’ was not declared in this scope
+[5.154s]    67 |     image_transport_ = new image_transport::ImageTransport([01;31m[Kn_[m[K);
+[5.154s]       |                                                            [01;31m[K^~[m[K
+[5.156s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:69:123:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kimage_transport::ImageTransport::subscribe(const char [14], int, void (MapAsImageProvider::*)(const Image*&), MapAsImageProvider*)[m[K’
+[5.156s]    69 |     image_transport_subscriber_map = image_transport_->subscribe("map_image_raw", 1, &MapAsImageProvider::mapCallback,this[01;31m[K)[m[K;
+[5.157s]       |                                                                                                                           [01;31m[K^[m[K
+[5.157s] In file included from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:36[m[K:
+[5.158s] [01m[K/opt/ros/foxy/include/image_transport/image_transport.hpp:141:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, const Callback&, const VoidPtr&, const image_transport::TransportHints*)[m[K’
+[5.158s]   141 |   Subscriber [01;36m[Ksubscribe[m[K(
+[5.158s]       |              [01;36m[K^~~~~~~~~[m[K
+[5.159s] [01m[K/opt/ros/foxy/include/image_transport/image_transport.hpp:143:34:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kvoid (MapAsImageProvider::*)(const Image*&)[m[K’ {aka ‘[01m[Kvoid (MapAsImageProvider::*)(const sensor_msgs::msg::Image_<std::allocator<void> >*&)[m[K’} to ‘[01m[Kconst Callback&[m[K’ {aka ‘[01m[Kconst std::function<void(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)>&[m[K’}
+[5.160s]   143 |     [01;36m[Kconst Subscriber::Callback & callback[m[K,
+[5.161s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[5.162s] [01m[K/opt/ros/foxy/include/image_transport/image_transport.hpp:151:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kimage_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (*)(const ImageConstPtr&), const image_transport::TransportHints*)[m[K’
+[5.162s]   151 |   Subscriber [01;36m[Ksubscribe[m[K(
+[5.163s]       |              [01;36m[K^~~~~~~~~[m[K
+[5.163s] [01m[K/opt/ros/foxy/include/image_transport/image_transport.hpp:153:12:[m[K [01;36m[Knote: [m[K  no known conversion for argument 3 from ‘[01m[Kvoid (MapAsImageProvider::*)(const Image*&)[m[K’ {aka ‘[01m[Kvoid (MapAsImageProvider::*)(const sensor_msgs::msg::Image_<std::allocator<void> >*&)[m[K’} to ‘[01m[Kvoid (*)(const ImageConstPtr&)[m[K’ {aka ‘[01m[Kvoid (*)(const std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >&)[m[K’}
+[5.164s]   153 |     [01;36m[Kvoid (*fp)(const ImageConstPtr &)[m[K,
+[5.164s]       |     [01;36m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.165s] [01m[K/opt/ros/foxy/include/image_transport/image_transport.hpp:165:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), T*, const image_transport::TransportHints*)[m[K’
+[5.165s]   165 |   Subscriber [01;36m[Ksubscribe[m[K(
+[5.166s]       |              [01;36m[K^~~~~~~~~[m[K
+[5.167s] [01m[K/opt/ros/foxy/include/image_transport/image_transport.hpp:165:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.169s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:69:123:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst ImageConstPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} and ‘[01m[Kconst Image*[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Image_<std::allocator<void> >*[m[K’}
+[5.170s]    69 |     image_transport_subscriber_map = image_transport_->subscribe("map_image_raw", 1, &MapAsImageProvider::mapCallback,this[01;36m[K)[m[K;
+[5.170s]       |                                                                                                                           [01;36m[K^[m[K
+[5.173s] In file included from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:36[m[K:
+[5.174s] [01m[K/opt/ros/foxy/include/image_transport/image_transport.hpp:178:14:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> image_transport::Subscriber image_transport::ImageTransport::subscribe(const string&, uint32_t, void (T::*)(const ImageConstPtr&), const std::shared_ptr<_Tp>&, const image_transport::TransportHints*)[m[K’
+[5.174s]   178 |   Subscriber [01;36m[Ksubscribe[m[K(
+[5.175s]       |              [01;36m[K^~~~~~~~~[m[K
+[5.175s] [01m[K/opt/ros/foxy/include/image_transport/image_transport.hpp:178:14:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[5.176s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:69:123:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst ImageConstPtr[m[K’ {aka ‘[01m[Kconst std::shared_ptr<const sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} and ‘[01m[Kconst Image*[m[K’ {aka ‘[01m[Kconst sensor_msgs::msg::Image_<std::allocator<void> >*[m[K’}
+[5.176s]    69 |     image_transport_subscriber_map = image_transport_->subscribe("map_image_raw", 1, &MapAsImageProvider::mapCallback,this[01;36m[K)[m[K;
+[5.176s]       |                                                                                                                           [01;36m[K^[m[K
+[5.177s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:71:62:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[5.177s]    71 |     map_publisher = n_.advertise<nav_msgs::msg::OccupancyGrid[01;31m[K>[m[K("/map_from_jpeg", 50);
+[5.178s]       |                                                              [01;31m[K^[m[K
+[5.178s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:[m[K In member function ‘[01m[Kvoid MapAsImageProvider::mapCallback(const Image*&)[m[K’:
+[5.178s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:87:15:[m[K [01;31m[Kerror: [m[K‘[01m[KOccupancyGrid[m[K’ is not a member of ‘[01m[Knav_msgs[m[K’; did you mean ‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’?
+[5.179s]    87 |     nav_msgs::[01;31m[KOccupancyGrid[m[K map;
+[5.179s]       |               [01;31m[K^~~~~~~~~~~~~[m[K
+[5.179s] In file included from [01m[K/opt/ros/foxy/include/nav_msgs/srv/detail/get_map__struct.hpp:126[m[K,
+[5.180s]                  from [01m[K/opt/ros/foxy/include/nav_msgs/srv/get_map.hpp:7[m[K,
+[5.180s]                  from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:32[m[K:
+[5.181s] [01m[K/opt/ros/foxy/include/nav_msgs/msg/detail/occupancy_grid__struct.hpp:146:7:[m[K [01;36m[Knote: [m[K‘[01m[Knav_msgs::msg::OccupancyGrid[m[K’ declared here
+[5.181s]   146 | using [01;36m[KOccupancyGrid[m[K =
+[5.181s]       |       [01;36m[K^~~~~~~~~~~~~[m[K
+[5.182s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:89:8:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.182s]    89 |     map[01;31m[K.[m[Kheader.stamp = image->header.stamp;
+[5.183s]       |        [01;31m[K^[m[K
+[5.183s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:90:8:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.183s]    90 |     map[01;31m[K.[m[Kheader.frame_id = "map";
+[5.184s]       |        [01;31m[K^[m[K
+[5.184s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:91:8:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.185s]    91 |     map[01;31m[K.[m[Kinfo.width = image->width;
+[5.185s]       |        [01;31m[K^[m[K
+[5.186s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:92:8:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.186s]    92 |     map[01;31m[K.[m[Kinfo.height = image->height;
+[5.186s]       |        [01;31m[K^[m[K
+[5.187s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:93:8:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.187s]    93 |     map[01;31m[K.[m[Kinfo.origin.orientation.w = 1;
+[5.187s]       |        [01;31m[K^[m[K
+[5.188s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:94:8:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.188s]    94 |     map[01;31m[K.[m[Kinfo.resolution = resolution;
+[5.189s]       |        [01;31m[K^[m[K
+[5.190s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:95:8:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.190s]    95 |     map[01;31m[K.[m[Kinfo.origin.position.x = -((image->width + 1) * map.info.resolution * 0.5f);
+[5.190s]       |        [01;31m[K^[m[K
+[5.191s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:95:60:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.191s]    95 |     map.info.origin.position.x = -((image->width + 1) * map[01;31m[K.[m[Kinfo.resolution * 0.5f);
+[5.192s]       |                                                            [01;31m[K^[m[K
+[5.192s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:96:8:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.192s]    96 |     map[01;31m[K.[m[Kinfo.origin.position.y = -((image->height + 1) * map.info.resolution * 0.5f);
+[5.193s]       |        [01;31m[K^[m[K
+[5.193s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:96:61:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.194s]    96 |     map.info.origin.position.y = -((image->height + 1) * map[01;31m[K.[m[Kinfo.resolution * 0.5f);
+[5.194s]       |                                                             [01;31m[K^[m[K
+[5.195s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:106:10:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.195s]   106 |       map[01;31m[K.[m[Kdata.push_back(-1);
+[5.195s]       |          [01;31m[K^[m[K
+[5.196s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:109:6:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.196s]   109 |   map[01;31m[K.[m[Kdata.push_back(0);
+[5.196s]       |      [01;31m[K^[m[K
+[5.197s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:112:6:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K.[m[K’ token
+[5.197s]   112 |   map[01;31m[K.[m[Kdata.push_back(100);
+[5.198s]       |      [01;31m[K^[m[K
+[5.198s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:116:30:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[K)[m[K’ token
+[5.199s]   116 |     map_publisher.publish(map[01;31m[K)[m[K;
+[5.199s]       |                              [01;31m[K^[m[K
+[5.199s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.200s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:123:28:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst rclcpp::InitOptions&[m[K’ from expression of type ‘[01m[Kconst char [18][m[K’
+[5.200s]   123 |   rclcpp::init(argc, argv, [01;31m[K"image_to_map_node"[m[K);
+[5.201s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.201s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:36[m[K,
+[5.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[5.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[5.202s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[5.203s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.203s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[5.203s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[5.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.204s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[5.205s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[5.205s]                  from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:30[m[K:
+[5.206s] [01m[K/opt/ros/foxy/include/rclcpp/utilities.hpp:56:63:[m[K [01;36m[Knote: [m[Kin passing argument 3 of ‘[01m[Kvoid rclcpp::init(int, const char* const*, const rclcpp::InitOptions&)[m[K’
+[5.206s]    56 | init(int argc, char const * const argv[], [01;36m[Kconst InitOptions & init_options = InitOptions()[m[K);
+[5.206s]       |                                           [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.207s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:125:11:[m[K [01;31m[Kerror: [m[K‘[01m[KNodeHandle[m[K’ is not a member of ‘[01m[Krclcpp[m[K’
+[5.207s]   125 |   rclcpp::[01;31m[KNodeHandle[m[K nh("~");
+[5.207s]       |           [01;31m[K^~~~~~~~~~[m[K
+[5.208s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:126:3:[m[K [01;31m[Kerror: [m[K‘[01m[Knh[m[K’ was not declared in this scope
+[5.208s]   126 |   [01;31m[Knh[m[K.param("resolution", resolution, 0.05);
+[5.209s]       |   [01;31m[K^~[m[K
+[5.209s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:131:16:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin()[m[K’
+[5.209s]   131 |   rclcpp::spin([01;31m[K)[m[K;
+[5.210s]       |                [01;31m[K^[m[K
+[5.210s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[5.211s]                  from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/image_to_map_node.cpp:30[m[K:
+[5.211s] [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)[m[K’
+[5.211s]    45 | [01;36m[Kspin[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+[5.212s]       | [01;36m[K^~~~[m[K
+[5.212s] [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[5.212s] [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)[m[K’
+[5.213s]    49 | [01;36m[Kspin[m[K(rclcpp::Node::SharedPtr node_ptr);
+[5.213s]       | [01;36m[K^~~~[m[K
+[5.214s] [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[5.422s] In file included from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42[m[K:
+[5.422s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:50:33:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[5.423s]    50 |     CoordinateTransformer(const [01;31m[Knav_msgs[m[K::msg::OccupancyGrid* map)
+[5.423s]       |                                 [01;31m[K^~~~~~~~[m[K
+[5.424s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:50:46:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[5.424s]    50 |     CoordinateTransformer(const nav_msgs::msg[01;31m[K::[m[KOccupancyGrid* map)
+[5.425s]       |                                              [01;31m[K^~[m[K
+[5.425s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:50:46:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[5.426s]    50 |     CoordinateTransformer[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KOccupancyGrid* map)
+[5.426s]       |                          [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[5.426s]       |                                              [32m[K)[m[K
+[5.427s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:50:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[5.427s]    50 |     CoordinateTransformer(const nav_msgs::[01;31m[Kmsg[m[K::OccupancyGrid* map)
+[5.427s]       |                                           [01;31m[K^~~[m[K
+[5.428s]       |                                              [32m[K;[m[K
+[5.428s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:50:48:[m[K [01;31m[Kerror: [m[K‘[01m[KOccupancyGrid[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[5.429s]    50 |     CoordinateTransformer(const nav_msgs::msg::[01;31m[KOccupancyGrid[m[K* map)
+[5.429s]       |                                                [01;31m[K^~~~~~~~~~~~~[m[K
+[5.430s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:56:30:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[5.430s]    56 |     void setTransforms(const [01;31m[Knav_msgs[m[K::msg::OccupancyGrid& map)
+[5.431s]       |                              [01;31m[K^~~~~~~~[m[K
+[5.431s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:56:43:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[5.431s]    56 |     void setTransforms(const nav_msgs::msg[01;31m[K::[m[KOccupancyGrid& map)
+[5.432s]       |                                           [01;31m[K^~[m[K
+[5.432s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:56:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[5.433s]    56 |     void setTransforms[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KOccupancyGrid& map)
+[5.433s]       |                       [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[5.434s]       |                                           [32m[K)[m[K
+[5.434s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:56:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[5.434s]    56 |     void setTransforms(const nav_msgs::[01;31m[Kmsg[m[K::OccupancyGrid& map)
+[5.435s]       |                                        [01;31m[K^~~[m[K
+[5.435s]       |                                           [32m[K;[m[K
+[5.436s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:56:45:[m[K [01;31m[Kerror: [m[K‘[01m[KOccupancyGrid[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[5.436s]    56 |     void setTransforms(const nav_msgs::msg::[01;31m[KOccupancyGrid[m[K& map)
+[5.436s]       |                                             [01;31m[K^~~~~~~~~~~~~[m[K
+[5.437s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:61:30:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[5.438s]    61 |     void setTransforms(const [01;31m[Knav_msgs[m[K::msg::MapMetaData& meta)
+[5.438s]       |                              [01;31m[K^~~~~~~~[m[K
+[5.438s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:61:43:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[5.439s]    61 |     void setTransforms(const nav_msgs::msg[01;31m[K::[m[KMapMetaData& meta)
+[5.439s]       |                                           [01;31m[K^~[m[K
+[5.440s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:61:43:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[5.440s]    61 |     void setTransforms[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KMapMetaData& meta)
+[5.441s]       |                       [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[5.441s]       |                                           [32m[K)[m[K
+[5.442s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:61:40:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[5.442s]    61 |     void setTransforms(const nav_msgs::[01;31m[Kmsg[m[K::MapMetaData& meta)
+[5.443s]       |                                        [01;31m[K^~~[m[K
+[5.443s]       |                                           [32m[K;[m[K
+[5.443s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:61:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(...)[m[K’ cannot be overloaded with ‘[01m[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(...)[m[K’
+[5.444s]    61 |     void [01;31m[KsetTransforms[m[K(const nav_msgs::msg::MapMetaData& meta)
+[5.444s]       |          [01;31m[K^~~~~~~~~~~~~[m[K
+[5.444s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:56:10:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kvoid HectorMapTools::CoordinateTransformer<ConcreteScalar>::setTransforms(...)[m[K’
+[5.445s]    56 |     void [01;36m[KsetTransforms[m[K(const nav_msgs::msg::OccupancyGrid& map)
+[5.445s]       |          [01;36m[K^~~~~~~~~~~~~[m[K
+[5.446s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:61:45:[m[K [01;31m[Kerror: [m[K‘[01m[KMapMetaData[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[5.446s]    61 |     void setTransforms(const nav_msgs::msg::[01;31m[KMapMetaData[m[K& meta)
+[5.446s]       |                                             [01;31m[K^~~~~~~~~~~[m[K
+[5.447s] In file included from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42[m[K:
+[5.447s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:127:17:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ has not been declared
+[5.448s]   127 |     void setMap([01;31m[Knav_msgs[m[K::msg::OccupancyGrid* map)
+[5.448s]       |                 [01;31m[K^~~~~~~~[m[K
+[5.448s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:127:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K...[m[K’ before ‘[01m[K*[m[K’ token
+[5.449s]   127 |     void setMap(nav_msgs::msg::OccupancyGrid[01;31m[K*[m[K map)
+[5.449s]       |                                             [01;31m[K^[m[K
+[5.497s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:237:5:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[5.498s]   237 |     [01;31m[Knav_msgs[m[K::msg::OccupancyGrid* map_ptr_;
+[5.498s]       |     [01;31m[K^~~~~~~~[m[K
+[5.502s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:242:35:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[5.502s]   242 |   static bool getMapExtends(const [01;31m[Knav_msgs[m[K::msg::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)
+[5.503s]       |                                   [01;31m[K^~~~~~~~[m[K
+[5.503s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:242:48:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[5.504s]   242 |   static bool getMapExtends(const nav_msgs::msg[01;31m[K::[m[KOccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)
+[5.504s]       |                                                [01;31m[K^~[m[K
+[5.505s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:242:48:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[5.505s]   242 |   static bool getMapExtends[34m[K([m[Kconst nav_msgs::msg[01;31m[K:[m[K[32m[K:[m[KOccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)
+[5.506s]       |                            [34m[K~[m[K                   [01;31m[K^[m[K[32m[K~[m[K
+[5.506s]       |                                                [32m[K)[m[K
+[5.507s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:242:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[5.507s]   242 |   static bool getMapExtends(const nav_msgs::[01;31m[Kmsg[m[K::OccupancyGrid& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)
+[5.508s]       |                                             [01;31m[K^~~[m[K
+[5.508s]       |                                                [32m[K;[m[K
+[5.508s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:242:50:[m[K [01;31m[Kerror: [m[K‘[01m[KOccupancyGrid[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[5.509s]   242 |   static bool getMapExtends(const nav_msgs::msg::[01;31m[KOccupancyGrid[m[K& map, Eigen::Vector2i& topLeft, Eigen::Vector2i& bottomRight)
+[5.509s]       |                                                  [01;31m[K^~~~~~~~~~~~~[m[K
+[5.510s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:[m[K In constructor ‘[01m[KHectorMapTools::DistanceMeasurementProvider::DistanceMeasurementProvider()[m[K’:
+[5.510s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:123:5:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KCoordinateTransformer()[m[K’ is ambiguous
+[5.510s]   123 |     [01;31m[K{[m[K
+[5.511s]       |     [01;31m[K^[m[K
+[5.511s] In file included from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42[m[K:
+[5.511s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:50:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KHectorMapTools::CoordinateTransformer<ConcreteScalar>::CoordinateTransformer(...) [with ConcreteScalar = float][m[K’
+[5.512s]    50 |     [01;36m[KCoordinateTransformer[m[K(const nav_msgs::msg::OccupancyGrid* map)
+[5.512s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.513s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:45:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KHectorMapTools::CoordinateTransformer<ConcreteScalar>::CoordinateTransformer() [with ConcreteScalar = float][m[K’
+[5.514s]    45 |     [01;36m[KCoordinateTransformer[m[K()
+[5.514s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.515s] In file included from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42[m[K:
+[5.515s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:[m[K In member function ‘[01m[Kvoid HectorMapTools::DistanceMeasurementProvider::setMap(int)[m[K’:
+[5.516s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:129:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_ptr_[m[K’ was not declared in this scope
+[5.516s]   129 |       [01;31m[Kmap_ptr_[m[K = map;
+[5.516s]       |       [01;31m[K^~~~~~~~[m[K
+[5.517s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:129:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap[m[K’ was not declared in this scope; did you mean ‘[01m[Kstd::map[m[K’?
+[5.517s]   129 |       map_ptr_ = [01;31m[Kmap[m[K;
+[5.518s]       |                  [01;31m[K^~~[m[K
+[5.518s]       |                  [32m[Kstd::map[m[K
+[5.518s] In file included from [01m[K/usr/include/c++/9/map:61[m[K,
+[5.519s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:20[m[K,
+[5.519s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[5.519s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[5.520s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[5.520s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.521s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[5.521s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[5.521s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.522s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[5.522s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[5.523s]                  from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:29[m[K:
+[5.523s] [01m[K/usr/include/c++/9/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::map[m[K’ declared here
+[5.523s]   100 |     class [01;36m[Kmap[m[K
+[5.524s]       |           [01;36m[K^~~[m[K
+[5.580s] In file included from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42[m[K:
+[5.581s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:[m[K In member function ‘[01m[Kfloat HectorMapTools::DistanceMeasurementProvider::checkOccupancyBresenhami(const Vector2i&, const Vector2i&, Eigen::Vector2i*, unsigned int)[m[K’:
+[5.581s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:154:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_ptr_[m[K’ was not declared in this scope
+[5.582s]   154 |       int sizeX = [01;31m[Kmap_ptr_[m[K->info.width;
+[5.582s]       |                   [01;31m[K^~~~~~~~[m[K
+[5.623s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:[m[K In member function ‘[01m[Kint HectorMapTools::DistanceMeasurementProvider::bresenham2D(unsigned int, unsigned int, int, int, int, unsigned int, unsigned int)[m[K’:
+[5.623s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:217:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_ptr_[m[K’ was not declared in this scope
+[5.624s]   217 |       const std::vector<int8_t>& data = [01;31m[Kmap_ptr_[m[K->data;
+[5.624s]       |                                         [01;31m[K^~~~~~~~[m[K
+[5.637s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:[m[K At global scope:
+[5.637s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:95:42:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStampedConstPtr[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+[5.638s]    95 |   void poseCallback(const geometry_msgs::[01;31m[KPoseStampedConstPtr[m[K& pose)
+[5.638s]       |                                          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.642s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:101:26:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs[m[K’ does not name a type
+[5.642s]   101 |   void mapCallback(const [01;31m[Knav_msgs[m[K::OccupancyGridConstPtr& map)
+[5.643s]       |                          [01;31m[K^~~~~~~~[m[K
+[5.643s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:101:57:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K&[m[K’ token
+[5.644s]   101 |   void mapCallback(const nav_msgs::OccupancyGridConstPtr[01;31m[K&[m[K map)
+[5.644s]       |                                                         [01;31m[K^[m[K
+[5.644s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:101:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K&[m[K’ token
+[5.645s]   101 |   void mapCallback[34m[K([m[Kconst nav_msgs::OccupancyGridConstPtr[01;31m[K&[m[K map)
+[5.654s]       |                   [34m[K~[m[K                                     [01;31m[K^[m[K
+[5.654s]       |                                                         [32m[K)[m[K
+[5.654s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:101:57:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[5.654s]   101 |   void mapCallback(const nav_msgs::OccupancyGridConstPtr[01;31m[K&[m[K map)
+[5.654s]       |                                                         [01;31m[K^[m[K
+[5.655s]       |                                                          [32m[K;[m[K
+[5.655s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:101:59:[m[K [01;31m[Kerror: [m[Kinvalid use of template-name ‘[01m[Kstd::map[m[K’ without an argument list
+[5.655s]   101 |   void mapCallback(const nav_msgs::OccupancyGridConstPtr& [01;31m[Kmap[m[K)
+[5.655s]       |                                                           [01;31m[K^~~[m[K
+[5.655s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:101:59:[m[K [01;36m[Knote: [m[Kclass template argument deduction is only available with ‘[01m[K-std=c++17[m[K’ or ‘[01m[K-std=gnu++17[m[K’
+[5.656s] In file included from [01m[K/usr/include/c++/9/map:61[m[K,
+[5.656s]                  from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:20[m[K,
+[5.656s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[5.656s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[5.656s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[5.656s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.657s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[5.658s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[5.658s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.659s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[5.659s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[5.659s]                  from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:29[m[K:
+[5.660s] [01m[K/usr/include/c++/9/bits/stl_map.h:100:11:[m[K [01;36m[Knote: [m[K‘[01m[Ktemplate<class _Key, class _Tp, class _Compare, class _Alloc> class std::map[m[K’ declared here
+[5.660s]   100 |     class [01;36m[Kmap[m[K
+[5.661s]       |           [01;36m[K^~~[m[K
+[5.661s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:282:11:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriber[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+[5.661s]   282 |   rclcpp::[01;31m[KSubscriber[m[K map_sub_;
+[5.662s]       |           [01;31m[K^~~~~~~~~~[m[K
+[5.662s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:283:11:[m[K [01;31m[Kerror: [m[K‘[01m[KSubscriber[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+[5.663s]   283 |   rclcpp::[01;31m[KSubscriber[m[K pose_sub_;
+[5.663s]       |           [01;31m[K^~~~~~~~~~[m[K
+[5.663s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:291:18:[m[K [01;31m[Kerror: [m[K‘[01m[KPoseStampedConstPtr[m[K’ in namespace ‘[01m[Kgeometry_msgs[m[K’ does not name a type
+[5.664s]   291 |   geometry_msgs::[01;31m[KPoseStampedConstPtr[m[K pose_ptr_;
+[5.664s]       |                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.665s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:297:11:[m[K [01;31m[Kerror: [m[K‘[01m[KNodeHandle[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+[5.665s]   297 |   rclcpp::[01;31m[KNodeHandle[m[K n_;
+[5.666s]       |           [01;31m[K^~~~~~~~~~[m[K
+[5.666s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:298:11:[m[K [01;31m[Kerror: [m[K‘[01m[KNodeHandle[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type
+[5.666s]   298 |   rclcpp::[01;31m[KNodeHandle[m[K pn_;
+[5.680s]       |           [01;31m[K^~~~~~~~~~[m[K
+[5.680s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:[m[K In constructor ‘[01m[KMapAsImageProvider::MapAsImageProvider()[m[K’:
+[5.680s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:61:7:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KMapAsImageProvider[m[K’ does not have any field named ‘[01m[Kpn_[m[K’
+[5.680s]    61 |     : [01;31m[Kpn_[m[K("~")
+[5.681s]       |       [01;31m[K^~~[m[K
+[5.681s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:61:14:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Node::Node()[m[K’
+[5.681s]    61 |     : pn_("~"[01;31m[K)[m[K
+[5.681s]       |              [01;31m[K^[m[K
+[5.682s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[5.682s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:22[m[K,
+[5.682s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[5.682s]                  from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:29[m[K:
+[5.682s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const rclcpp::Node&, const string&)[m[K’
+[5.682s]  1193 |   [01;36m[KNode[m[K(
+[5.683s]       |   [01;36m[K^~~~[m[K
+[5.683s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:1193:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[5.683s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const string&, const rclcpp::NodeOptions&)[m[K’
+[5.683s]    98 |   explicit [01;36m[KNode[m[K(
+[5.683s]       |            [01;36m[K^~~~[m[K
+[5.684s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:98:12:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 0 provided
+[5.684s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Krclcpp::Node::Node(const string&, const rclcpp::NodeOptions&)[m[K’
+[5.684s]    86 |   explicit [01;36m[KNode[m[K(
+[5.684s]       |            [01;36m[K^~~~[m[K
+[5.684s] [01m[K/opt/ros/foxy/include/rclcpp/node.hpp:86:12:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+[5.685s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:61:14:[m[K [01;31m[Kerror: [m[Kcall of overloaded ‘[01m[KCoordinateTransformer()[m[K’ is ambiguous
+[5.686s]    61 |     : pn_("~"[01;31m[K)[m[K
+[5.686s]       |              [01;31m[K^[m[K
+[5.686s] In file included from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:42[m[K:
+[5.686s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:50:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KHectorMapTools::CoordinateTransformer<ConcreteScalar>::CoordinateTransformer(...) [with ConcreteScalar = float][m[K’
+[5.686s]    50 |     [01;36m[KCoordinateTransformer[m[K(const nav_msgs::msg::OccupancyGrid* map)
+[5.686s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.687s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/include/HectorMapTools.h:45:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KHectorMapTools::CoordinateTransformer<ConcreteScalar>::CoordinateTransformer() [with ConcreteScalar = float][m[K’
+[5.687s]    45 |     [01;36m[KCoordinateTransformer[m[K()
+[5.687s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[5.687s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:64:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kn_[m[K’ was not declared in this scope
+[5.687s]    64 |     image_transport_ = new image_transport::ImageTransport([01;31m[Kn_[m[K);
+[5.688s]       |                                                            [01;31m[K^~[m[K
+[5.688s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:69:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_sub_[m[K’ was not declared in this scope
+[5.688s]    69 |     [01;31m[Kpose_sub_[m[K = n_.subscribe("pose", 1, &MapAsImageProvider::poseCallback, this);
+[5.688s]       |     [01;31m[K^~~~~~~~~[m[K
+[5.689s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:70:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmap_sub_[m[K’ was not declared in this scope
+[5.689s]    70 |     [01;31m[Kmap_sub_[m[K = n_.subscribe("map", 1, &MapAsImageProvider::mapCallback, this);
+[5.689s]       |     [01;31m[K^~~~~~~~[m[K
+[5.689s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:[m[K In member function ‘[01m[Kvoid MapAsImageProvider::poseCallback(const int&)[m[K’:
+[5.690s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:97:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kpose_ptr_[m[K’ was not declared in this scope
+[5.690s]    97 |     [01;31m[Kpose_ptr_[m[K = pose;
+[5.690s]       |     [01;31m[K^~~~~~~~~[m[K
+[5.690s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[5.690s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:309:28:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst rclcpp::InitOptions&[m[K’ from expression of type ‘[01m[Kconst char [18][m[K’
+[5.691s]   309 |   rclcpp::init(argc, argv, [01;31m[K"map_to_image_node"[m[K);
+[5.691s]       |                            [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.691s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/client.hpp:36[m[K,
+[5.691s]                  from [01m[K/opt/ros/foxy/include/rclcpp/callback_group.hpp:23[m[K,
+[5.691s]                  from [01m[K/opt/ros/foxy/include/rclcpp/any_executable.hpp:20[m[K,
+[5.692s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategy.hpp:24[m[K,
+[5.692s]                  from [01m[K/opt/ros/foxy/include/rclcpp/memory_strategies.hpp:18[m[K,
+[5.692s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor_options.hpp:20[m[K,
+[5.692s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executor.hpp:33[m[K,
+[5.692s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[5.693s]                  from [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:21[m[K,
+[5.693s]                  from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[5.693s]                  from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:29[m[K:
+[5.693s] [01m[K/opt/ros/foxy/include/rclcpp/utilities.hpp:56:63:[m[K [01;36m[Knote: [m[Kin passing argument 3 of ‘[01m[Kvoid rclcpp::init(int, const char* const*, const rclcpp::InitOptions&)[m[K’
+[5.693s]    56 | init(int argc, char const * const argv[], [01;36m[Kconst InitOptions & init_options = InitOptions()[m[K);
+[5.694s]       |                                           [01;36m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.694s] [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:313:16:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kspin()[m[K’
+[5.694s]   313 |   rclcpp::spin([01;31m[K)[m[K;
+[5.694s]       |                [01;31m[K^[m[K
+[5.694s] In file included from [01m[K/opt/ros/foxy/include/rclcpp/rclcpp.hpp:146[m[K,
+[5.695s]                  from [01m[K/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/src/map_to_image_node.cpp:29[m[K:
+[5.695s] [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)[m[K’
+[5.695s]    45 | [01;36m[Kspin[m[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);
+[5.695s]       | [01;36m[K^~~~[m[K
+[5.695s] [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:45:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[5.696s] [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)[m[K’
+[5.696s]    49 | [01;36m[Kspin[m[K(rclcpp::Node::SharedPtr node_ptr);
+[5.696s]       | [01;36m[K^~~~[m[K
+[5.696s] [01m[K/opt/ros/foxy/include/rclcpp/executors.hpp:49:1:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+[6.615s] make[2]: *** [CMakeFiles/image_to_map_node.dir/build.make:63: CMakeFiles/image_to_map_node.dir/src/image_to_map_node.cpp.o] Error 1
+[6.615s] make[1]: *** [CMakeFiles/Makefile2:80: CMakeFiles/image_to_map_node.dir/all] Error 2
+[6.616s] make[1]: *** Waiting for unfinished jobs....
+[6.967s] make[2]: *** [CMakeFiles/map_to_image_node.dir/build.make:63: CMakeFiles/map_to_image_node.dir/src/map_to_image_node.cpp.o] Error 1
+[6.968s] make[1]: *** [CMakeFiles/Makefile2:107: CMakeFiles/map_to_image_node.dir/all] Error 2
+[6.968s] make: *** [Makefile:95: all] Error 2
+[6.974s] Invoked command in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg' returned '2': /usr/bin/cmake --build /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg -- -j4 -l4

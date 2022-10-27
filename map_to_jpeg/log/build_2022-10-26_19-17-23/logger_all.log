@@ -1,0 +1,78 @@
+[0.386s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'map_to_jpeg']
+[0.387s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f79cf1d87c0>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=['map_to_jpeg'], packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f79cf1d87c0>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f79cf1d8d30>)
+[0.446s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.446s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.446s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.446s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.447s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.447s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.447s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg'
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.447s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.448s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.487s] DEBUG:colcon.colcon_core.package_identification:Package '.' with type 'ros.catkin' and name 'map_to_jpeg'
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.487s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.552s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.552s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.561s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 299 installed packages in /opt/ros/foxy
+[0.567s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'map_to_jpeg' build argument 'cmake_args' from command line to 'None'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'map_to_jpeg' build argument 'cmake_target' from command line to 'None'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'map_to_jpeg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'map_to_jpeg' build argument 'cmake_clean_cache' from command line to 'False'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'map_to_jpeg' build argument 'cmake_clean_first' from command line to 'False'
+[0.788s] Level 5:colcon.colcon_core.verb:set package 'map_to_jpeg' build argument 'cmake_force_configure' from command line to 'False'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'map_to_jpeg' build argument 'ament_cmake_args' from command line to 'None'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'map_to_jpeg' build argument 'catkin_cmake_args' from command line to 'None'
+[0.789s] Level 5:colcon.colcon_core.verb:set package 'map_to_jpeg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.789s] DEBUG:colcon.colcon_core.verb:Building package 'map_to_jpeg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg', 'merge_install': False, 'path': '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg', 'symlink_install': False, 'test_result_base': None}
+[0.791s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.804s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.804s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg' with build type 'catkin'
+[0.805s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg'
+[0.816s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.816s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.816s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.370s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg': /usr/bin/cmake --build /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg -- -j4 -l4
+[8.747s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg' returned '2': /usr/bin/cmake --build /home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/build/map_to_jpeg -- -j4 -l4
+[8.815s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(map_to_jpeg)
+[8.840s] Level 1:colcon.colcon_core.environment:checking '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg' for CMake module files
+[8.842s] Level 1:colcon.colcon_core.environment:checking '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg' for CMake config files
+[8.845s] Level 1:colcon.colcon_core.environment:checking '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg/bin'
+[8.845s] Level 1:colcon.colcon_core.environment:checking '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg/lib/pkgconfig/map_to_jpeg.pc'
+[8.846s] Level 1:colcon.colcon_core.environment:checking '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg/lib/python3.8/site-packages'
+[8.847s] Level 1:colcon.colcon_core.environment:checking '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg/bin'
+[8.856s] INFO:colcon.colcon_core.shell:Creating package script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg/share/map_to_jpeg/package.ps1'
+[8.860s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg/share/map_to_jpeg/package.dsv'
+[8.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg/share/map_to_jpeg/package.sh'
+[8.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg/share/map_to_jpeg/package.bash'
+[8.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg/share/map_to_jpeg/package.zsh'
+[8.873s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/map_to_jpeg/share/colcon-core/packages/map_to_jpeg)
+[8.886s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.886s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.887s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[8.887s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.941s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.941s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.941s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[9.039s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[9.048s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/local_setup.ps1'
+[9.055s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/_local_setup_util_ps1.py'
+[9.069s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/setup.ps1'
+[9.075s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/local_setup.sh'
+[9.078s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/_local_setup_util_sh.py'
+[9.080s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/setup.sh'
+[9.087s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/local_setup.bash'
+[9.089s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/setup.bash'
+[9.095s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/local_setup.zsh'
+[9.098s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jcbynum2/dev-workspace/src/corobot/map_to_jpeg/install/setup.zsh'
