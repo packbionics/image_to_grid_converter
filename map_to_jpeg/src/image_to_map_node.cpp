@@ -56,7 +56,7 @@ public:
   rclcpp::Publisher <nav_msgs::msg::OccupancyGrid>::SharedPtr map_publisher;
 
   //Subscriber to the image topic
-  image_transport::Subscriber image_transport_subscriber_map;
+  rclcpp::Subscription <sensor_msgs::msg::Image>::SharedPtr image_transport_subscriber_map;
 
   image_transport::ImageTransport* image_transport_;
 
@@ -68,7 +68,13 @@ public:
     //subscribe to the image topic representing the map
     //image_transport_subscriber_map = image_transport_->subscribe("map_image_raw", 1, &MapAsImageProvider::mapCallback,this); 
     // publish the map as an occupancy grid
-    map_publisher = this->create_publisher<nav_msgs::msg::OccupancyGrid>("map_raw", 10)
+    RCLCPP_INFO(this->get_logger(), "Hello Me");
+
+    map_publisher = this->create_publisher<nav_msgs::msg::OccupancyGrid>("map_raw", 10);
+
+    auto varName = std::bind(&MapAsImageProvider::mapCallback, this, std::placeholders::_1);
+
+    image_transport_subscriber_map = this->create_subscription<sensor_msgs::msg::Image>("image_transport", 10, varName);
 
 
     RCLCPP_INFO(this->get_logger(),"Image to Map node started.");
@@ -81,10 +87,11 @@ public:
 
 
   //The map->image conversion runs every time a new map is received
-  void mapCallback(const sensor_msgs::msg::Image*& image)
+  void mapCallback(const sensor_msgs::msg::Image::SharedPtr image)
   {
 
-    nav_msgs::OccupancyGrid map;
+    RCLCPP_INFO(this->get_logger(), "Hello World");
+    nav_msgs::msg::OccupancyGrid map;
     //fill in some map parameters
     map.header.stamp = image->header.stamp;
     map.header.frame_id = "map";
@@ -113,22 +120,19 @@ public:
 	}
     }
     //publish the map
-    map_publisher.publish(map); 
+    map_publisher->publish(map); 
   }
 
 };
 
 int main(int argc, char** argv)
 {
-  rclcpp::init(argc, argv, "image_to_map_node");
+  rclcpp::init(argc, argv);
 
-  rclcpp::NodeHandle nh("~");
-  nh.param("resolution", resolution, 0.05); 
+  auto node = std::make_shared<MapAsImageProvider>();
+  node->declare_parameter("resolution", 0.05); 
 
-  // The 
-  MapAsImageProvider map_image_provider;
-
-  rclcpp::spin();
+  rclcpp::spin(node);
 
   return 0;
 }

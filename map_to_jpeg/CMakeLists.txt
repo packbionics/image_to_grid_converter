@@ -14,18 +14,18 @@ find_package(cv_bridge REQUIRED)
 
 include_directories(${EIGEN3_INCLUDE_DIRS} include)
 
-add_executable(map_to_image_node src/map_to_image_node.cpp)
-ament_target_dependencies(map_to_image_node
-"geometry_msgs"
-"nav_msgs"
-"tf2"
-"image_transport"
-"cv_bridge"
-"sensor_msgs"
-"rclcpp"
-)
-target_link_libraries(map_to_image_node)
-target_link_libraries(map_to_image_node ${OpenCV_LIBRARIES})
+#add_executable(map_to_image_node src/map_to_image_node.cpp)
+#ament_target_dependencies(map_to_image_node
+#"geometry_msgs"
+#"nav_msgs"
+#"tf2"
+#"image_transport"
+#"cv_bridge"
+#"sensor_msgs"
+# "rclcpp"
+# )
+# target_link_libraries(map_to_image_node)
+# target_link_libraries(map_to_image_node ${OpenCV_LIBRARIES})
 
 add_executable(image_to_map_node src/image_to_map_node.cpp)
 ament_target_dependencies(image_to_map_node
@@ -38,3 +38,6 @@ ament_target_dependencies(image_to_map_node
 "rclcpp"
 )
 target_link_libraries (image_to_map_node )
+
+install(TARGETS image_to_map_node RUNTIME DESTINATION lib/${PROJECT_NAME})
+ament_package()

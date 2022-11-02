@@ -6,6 +6,7 @@
 			[
 				{
 					"build" : ".",
+					"hasInstallRule" : true,
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -16,8 +17,7 @@
 					[
 						0,
 						1,
-						2,
-						3
+						2
 					]
 				}
 			],
@@ -34,8 +34,7 @@
 					[
 						0,
 						1,
-						2,
-						3
+						2
 					]
 				}
 			],
@@ -44,15 +43,8 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "image_to_map_node::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-image_to_map_node-Debug-095cffbef88df2379a14.json",
+					"jsonFile" : "target-image_to_map_node-Debug-aeb76e6134dc151fc08e.json",
 					"name" : "image_to_map_node",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "map_to_image_node::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-map_to_image_node-Debug-975c977b7d1eb35febf0.json",
-					"name" : "map_to_image_node",
 					"projectIndex" : 0
 				},
 				{
