@@ -47,44 +47,29 @@ double resolution = 0.05;
 /**
  * @brief This node provides images as occupancy grid maps.
  */
-class MapAsImageProvider : public rclcpp::Node
-{
-
+class ImageAsMapProvider : public rclcpp::Node {
 public:
 
   // Publisher for the map
   rclcpp::Publisher <nav_msgs::msg::OccupancyGrid>::SharedPtr map_publisher;
 
   //Subscriber to the image topic
-  rclcpp::Subscription <sensor_msgs::msg::Image>::SharedPtr image_transport_subscriber_map;
+  rclcpp::Subscription <sensor_msgs::msg::Image>::SharedPtr image_subscriber;
 
-  image_transport::ImageTransport* image_transport_;
+  ImageAsMapProvider(): rclcpp::Node("map_to_image_pub") {
 
-  MapAsImageProvider(): rclcpp::Node("map_to_image_pub")
-
-  {
-
-    //image_transport_ = new image_transport::ImageTransport();
-    //subscribe to the image topic representing the map
-    //image_transport_subscriber_map = image_transport_->subscribe("map_image_raw", 1, &MapAsImageProvider::mapCallback,this); 
-    // publish the map as an occupancy grid
     RCLCPP_INFO(this->get_logger(), "Hello Me");
 
-    map_publisher = this->create_publisher<nav_msgs::msg::OccupancyGrid>("map_raw", 10);
+    // publish the map as an occupancy grid
+    map_publisher = this->create_publisher<nav_msgs::msg::OccupancyGrid>("map_raw", rclcpp::SensorDataQoS());
 
-    auto varName = std::bind(&MapAsImageProvider::mapCallback, this, std::placeholders::_1);
-
-    image_transport_subscriber_map = this->create_subscription<sensor_msgs::msg::Image>("image_transport", 10, varName);
+    // subscribe to the image topic representing the map
+    auto subCallback = std::bind(&ImageAsMapProvider::mapCallback, this, std::placeholders::_1);
+    image_subscriber = this->create_subscription<sensor_msgs::msg::Image>("image", rclcpp::SensorDataQoS(), subCallback);
 
 
     RCLCPP_INFO(this->get_logger(),"Image to Map node started.");
   }
-
-  ~MapAsImageProvider()
-  {
-    delete image_transport_;
-  }
-
 
   //The map->image conversion runs every time a new map is received
   void mapCallback(const sensor_msgs::msg::Image::SharedPtr image)
@@ -94,7 +79,7 @@ public:
     nav_msgs::msg::OccupancyGrid map;
     //fill in some map parameters
     map.header.stamp = image->header.stamp;
-    map.header.frame_id = "map";
+    map.header.frame_id = "odom";
     map.info.width = image->width;
     map.info.height = image->height;
     map.info.origin.orientation.w = 1;
@@ -104,21 +89,20 @@ public:
 
     //read the pixels of the image and fill the map table
     int data;
-    for(int i=image->height -1; i>=0; i--)
-    {
-	for (unsigned int j=0; j<image->width;j++)
-	{
-	    data = image->data[i*image->width + j];
-	    if(data >=123 && data <= 131){
-	    	map.data.push_back(-1);
-	    }
-	    else if (data >=251 && data <= 259){
-		map.data.push_back(0);
-	    }
-	    else
-		map.data.push_back(100);
-	}
+    for(int i=image->height - 1; i>=0; i--) {
+      for (unsigned int j=0; j<image->width;j++) {
+
+          data = image->data[i*image->width + j];
+          if(data >=123 && data <= 131){
+            map.data.push_back(-1);
+          } else if (data >=251 && data <= 259){
+            map.data.push_back(0);
+          } else {
+            map.data.push_back(100);
+          }
+      }
     }
+    
     //publish the map
     map_publisher->publish(map); 
   }
@@ -129,7 +113,7 @@ int main(int argc, char** argv)
 {
   rclcpp::init(argc, argv);
 
-  auto node = std::make_shared<MapAsImageProvider>();
+  auto node = std::make_shared<ImageAsMapProvider>();
   node->declare_parameter("resolution", 0.05); 
 
   rclcpp::spin(node);
