@@ -58,6 +58,9 @@ public:
 
   ImageAsMapProvider(): rclcpp::Node("map_to_image_pub") {
 
+    // Declare paramters
+    this->declare_parameter("frame_id", "transformed_map");
+
     // publish the map as an occupancy grid
     map_publisher = this->create_publisher<nav_msgs::msg::OccupancyGrid>("map_raw", rclcpp::SensorDataQoS());
 
@@ -75,7 +78,7 @@ public:
     nav_msgs::msg::OccupancyGrid map;
     //fill in some map parameters
     map.header.stamp = image->header.stamp;
-    map.header.frame_id = "transformed_map";
+    map.header.frame_id = this->get_parameter("frame_id").as_string();
     map.info.width = image->width;
     map.info.height = image->height;
     map.info.origin.orientation.w = 1;
