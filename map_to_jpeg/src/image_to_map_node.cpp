@@ -58,8 +58,6 @@ public:
 
   ImageAsMapProvider(): rclcpp::Node("map_to_image_pub") {
 
-    RCLCPP_INFO(this->get_logger(), "Hello Me");
-
     // publish the map as an occupancy grid
     map_publisher = this->create_publisher<nav_msgs::msg::OccupancyGrid>("map_raw", rclcpp::SensorDataQoS());
 
@@ -74,12 +72,10 @@ public:
   //The map->image conversion runs every time a new map is received
   void mapCallback(const sensor_msgs::msg::Image::SharedPtr image)
   {
-
-    RCLCPP_INFO(this->get_logger(), "Hello World");
     nav_msgs::msg::OccupancyGrid map;
     //fill in some map parameters
     map.header.stamp = image->header.stamp;
-    map.header.frame_id = "odom";
+    map.header.frame_id = "transformed_map";
     map.info.width = image->width;
     map.info.height = image->height;
     map.info.origin.orientation.w = 1;
